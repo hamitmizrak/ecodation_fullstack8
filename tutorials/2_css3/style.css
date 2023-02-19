@@ -36,9 +36,16 @@ p{
     margin: 3rem 2rem 3rem 1rem;
     padding:4rem 3rem !important;
     border: 10px solid red;
-    max-width: 300px;
-    height: 200px;
+    max-width: 600px;
+    height: 500px;
 }
+
+#div_id:hover{
+   transition: 1s all;
+    transform:rotate(230deg) ; 
+    cursor: pointer;
+}
+
 
 #div_id>p{
     font-size: 1rem;
@@ -50,6 +57,8 @@ p{
     text-shadow: 1px 2px rgb(199, 235, 102);
     text-indent: 15px;
     display: inline-block;
+    column-count: 2;
+    column-rule: 1px solid red;
 }
 /*
 width or height: inline-block
@@ -62,6 +71,8 @@ a{
     color:white;
     padding:1rem 1rem;
     border-radius: 10%;
+   
+   
 }
 
 a:hover{
@@ -69,4 +80,6 @@ a:hover{
     color:blue;
     box-shadow: 1px 1px 30px 5px rgba(0,0,0,.8);
     text-transform: uppercase;
+    transition: 1s all;
+    transform:rotate(230deg) ;
 }
