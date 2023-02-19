@@ -30,4 +30,18 @@ p{
     margin: 3rem 2rem 3rem 1rem;
     padding:4rem 3rem !important;
     border: 10px solid red;
+
+}
+
+#div_id>p{
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: justify;
+    text-shadow: 1px 2px rgb(199, 235, 102);
+    text-indent: 15px;
+    display: inline-block;
+   
 }
