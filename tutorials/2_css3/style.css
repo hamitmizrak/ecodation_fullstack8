@@ -20,6 +20,15 @@ p{
     box-sizing: border-box; /*padding:10+border:10+width:100*/
 }
 
+
+:root{
+    --arkaplan:black;
+}
+
+body{
+    background-color: var(--arkaplan);
+}
+
 #div_id{
     background-color: black;
     color:white;
@@ -124,4 +133,35 @@ footer{
     width: auto;
     background-color: black;
     color:white;
+}
+
+#box{
+    height: 200px;
+    background-color: blue;
+    margin-top:3px;
+    display: inline-block;
+}
+
+@media screen and (min-width:1px){
+    #box{
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width:600px){
+    #box{
+        width: 49%; 
+    }
+}
+
+@media screen and (min-width:900px){
+    #box{
+        width: 32%; 
+    }
+}
+
+@media screen and (min-width:1200px){
+    #box{
+        width: 23%; 
+    }
 }
