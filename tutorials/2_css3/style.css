@@ -21,11 +21,13 @@ p{
     color:#ffffff;
     color:rgb(255,255,255);
     color:rgba(255,255,255,0.9);
-
     /* margin-top:3rem;
     margin-right:3rem;
     margin-left:3rem;
     margin-bottom:3rem; 
-    margin:3rem;*/
-    margin:3rem 5rem;
+    margin:3rem;
+    margin:3rem 5rem;*/
+    margin: 3rem 2rem 3rem 1rem;
+    padding:4rem 3rem !important;
+    border: 10px solid red;
 }
