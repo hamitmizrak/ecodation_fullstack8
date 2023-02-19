@@ -13,3 +13,19 @@ p{
 .paragraf_class{
     font-size: 3rem;
 }
+
+#div_id{
+    background-color: black;
+    color:white;
+    color:#fff;
+    color:#ffffff;
+    color:rgb(255,255,255);
+    color:rgba(255,255,255,0.9);
+
+    /* margin-top:3rem;
+    margin-right:3rem;
+    margin-left:3rem;
+    margin-bottom:3rem; 
+    margin:3rem;*/
+    margin:3rem 5rem;
+}
