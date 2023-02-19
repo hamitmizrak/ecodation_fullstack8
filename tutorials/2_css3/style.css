@@ -71,8 +71,7 @@ a{
     color:white;
     padding:1rem 1rem;
     border-radius: 10%;
-   
-   
+    cursor: none;
 }
 
 a:hover{
@@ -82,4 +81,18 @@ a:hover{
     text-transform: uppercase;
     transition: 1s all;
     transform:rotate(230deg) ;
+}
+
+/* img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: le;
+} */
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: center;
 }
