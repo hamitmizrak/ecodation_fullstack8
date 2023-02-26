@@ -134,52 +134,116 @@
 
 /////////////////////////////////////////////////////////////////////
 //SAYISAL:
-let sayi1=55;
-console.log(sayi1)
+// let sayi1=55;
+// console.log(sayi1)
 
-let sayi2=44.55555;
-console.log(sayi2);
-console.log(typeof sayi2);
+// let sayi2=44.55555;
+// console.log(sayi2);
+// console.log(typeof sayi2);
 
-//metinsel ==> sayıya çevirmek istiyorsak
-let metin="66";
-let sayi3=Number(metin);
-let sayi4=parseInt(metin);
+// //metinsel ==> sayıya çevirmek istiyorsak
+// let metin="66";
+// let sayi3=Number(metin);
+// let sayi4=parseInt(metin);
 
-//ES
-// const sayi4=Number(prompt("Lütfen sayı giriniz"));
-// console.log(Math.pow(sayi4,2));
-// console.log(sayi4**2);
+// //ES
+// // const sayi4=Number(prompt("Lütfen sayı giriniz"));
+// // console.log(Math.pow(sayi4,2));
+// // console.log(sayi4**2);
 
-//toFixed ==> virgülden sonra yuvarlamak
-const sayi5=89.12345678;
-console.log(sayi5.toFixed(4));
+// //toFixed ==> virgülden sonra yuvarlamak
+// const sayi5=89.12345678;
+// console.log(sayi5.toFixed(4));
 
-// Bilimsel gösterim 
-let bilimsel=13E+4;
-console.log(bilimsel)
+// // Bilimsel gösterim 
+// let bilimsel=13E+4;
+// console.log(bilimsel)
 
-// Ters Bilimsel gösterim 
-let deneme=560000;
-console.log(deneme.toExponential(1));
+// // Ters Bilimsel gösterim 
+// let deneme=560000;
+// console.log(deneme.toExponential(1));
 
-//sayı sistemleri
-//binary(2)       ==> 0,1
-let binary=0b01101;
-console.log(binary);
+// //sayı sistemleri
+// //binary(2)       ==> 0,1
+// let binary=0b01101;
+// console.log(binary);
 
-//octal(8)        ==> 0.1.2.3.4.5.6.7
-let octal=0o01101;
-console.log(octal);
+// //octal(8)        ==> 0.1.2.3.4.5.6.7
+// let octal=0o01101;
+// console.log(octal);
 
-//decimal(10)     ==> 0.1.2.3.4.5.6.7.8.9
-let decimal=123456;
-console.log(decimal);
+// //decimal(10)     ==> 0.1.2.3.4.5.6.7.8.9
+// let decimal=123456;
+// console.log(decimal);
 
-//hexadecimal(16) ==>0.1.2.3.4.5.6.7.8.9.a,b,c,d,e,f
-let hexadecimal=0xabc123;
-console.log(hexadecimal);
+// //hexadecimal(16) ==>0.1.2.3.4.5.6.7.8.9.a,b,c,d,e,f
+// let hexadecimal=0xabc123;
+// console.log(hexadecimal);
 
 
 /////////////////////////////////////////////////////////////////////
 //METINSEL:
+const kelime="Merhabalar güzel insanlar güzel";
+console.log(kelime.toLowerCase());
+console.log(kelime.toUpperCase());
+console.log(kelime.length);
+console.log(kelime.trim().length);
+
+console.log(kelime.charAt(0));
+console.log(kelime.startsWith("M"));
+console.log(kelime.endsWith(" "));
+
+console.log(kelime.concat(".INC").concat("XYZ"));
+
+console.log(kelime.replace(kelime," yenisi"));
+
+console.log(kelime.substring(3));
+console.log(kelime.substring(0,5));
+
+console.log(kelime.indexOf("güzel"));
+console.log(kelime.lastIndexOf("güzel"));
+
+
+//ÖDEV
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+//S-1) Kaç karakterlidir ?
+//S-2) boşluklar alınarak Kaç karakterlidir ?
+//S-3) bütün kelimeyi küçük harfle göstermek ?
+//S-4) bütün kelimeyi büyük harfle göstermek ?
+//S-5) ilk harf nedir  ?
+//S-6) girdiğiniz kelime java ile başlıyor mu  ?
+//S-7) girdiğiniz kelimenin sonuna "-ben js öğreniyorum"   ?
+//S-8) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin   ?
+//S-9) Kullanıcıdan alınan başka bir kelimeyle birinci olan kelimeyle yer değiştirmek ?
+
+//cast
+//sayıyı sting'e çevirir
+String(14);
+let data=44;
+data.toString();
+
+
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, döngü, karar mekanizma
+
+// Function
+// conditional(if else )
+// Ternary
+// Switch case
+// Loop for-while-doWhile
+// forin forof
+// break continue return 
+// exception handling try-catch
+// debug atmak 
+// software prensible DRY,KISS, YAGNI, Dummy Code,Clean Code
+// SOLID
+// setTimeOut 
+// callbackfunction
+// promise
+// asyn-await
+
+// Dizi
