@@ -257,16 +257,6 @@
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-let result=()=>{
-    const usernameAndSurname=prompt("Adınız ve Soyadınız");
-    
-    let username=usernameAndSurname.substring(0,usernameAndSurname.indexOf(" "));
-    console.log(username);
-
-    let surname=usernameAndSurname.substring(usernameAndSurname.indexOf(" ")+1,usernameAndSurname.length);
-    console.log(surname);
-}
-result()
 
 // Function
 // conditional(if else )
