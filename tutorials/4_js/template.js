@@ -183,25 +183,25 @@
 
 /////////////////////////////////////////////////////////////////////
 //METINSEL:
-const kelime="Merhabalar güzel insanlar güzel";
-console.log(kelime.toLowerCase());
-console.log(kelime.toUpperCase());
-console.log(kelime.length);
-console.log(kelime.trim().length);
+// const kelime="Merhabalar güzel insanlar güzel";
+// console.log(kelime.toLowerCase());
+// console.log(kelime.toUpperCase());
+// console.log(kelime.length);
+// console.log(kelime.trim().length);
 
-console.log(kelime.charAt(0));
-console.log(kelime.startsWith("M"));
-console.log(kelime.endsWith(" "));
+// console.log(kelime.charAt(0));
+// console.log(kelime.startsWith("M"));
+// console.log(kelime.endsWith(" "));
 
-console.log(kelime.concat(".INC").concat("XYZ"));
+// console.log(kelime.concat(".INC").concat("XYZ"));
 
-console.log(kelime.replace(kelime," yenisi"));
+// console.log(kelime.replace(kelime," yenisi"));
 
-console.log(kelime.substring(3));
-console.log(kelime.substring(0,5));
+// console.log(kelime.substring(3));
+// console.log(kelime.substring(0,5));
 
-console.log(kelime.indexOf("güzel"));
-console.log(kelime.lastIndexOf("güzel"));
+// console.log(kelime.indexOf("güzel"));
+// console.log(kelime.lastIndexOf("güzel"));
 
 
 //ÖDEV
@@ -218,9 +218,9 @@ console.log(kelime.lastIndexOf("güzel"));
 
 //cast
 //sayıyı sting'e çevirir
-String(14);
-let data=44;
-data.toString();
+// String(14);
+// let data=44;
+// data.toString();
 
 // ÖDEVLER
 //Örnek-1
@@ -256,6 +256,17 @@ data.toString();
 // Hamit Mızrak
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+
+let result=()=>{
+    const usernameAndSurname=prompt("Adınız ve Soyadınız");
+    
+    let username=usernameAndSurname.substring(0,usernameAndSurname.indexOf(" "));
+    console.log(username);
+
+    let surname=usernameAndSurname.substring(usernameAndSurname.indexOf(" ")+1,usernameAndSurname.length);
+    console.log(surname);
+}
+result()
 
 // Function
 // conditional(if else )
