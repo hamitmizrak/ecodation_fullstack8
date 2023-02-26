@@ -91,24 +91,44 @@
 // console.log(number1+number3);
 
 //undefined 
-let data1=0;
-console.log(data1);
+// let data1=0;
+// console.log(data1);
 
-//NaN
-console.log(4/4)
-console.log(4/"4")
-console.log(4/"asd")
+// //NaN
+// console.log(4/4)
+// console.log(4/"4")
+// console.log(4/"asd")
 
-//infinity 
-console.log(4/0);
+// //infinity 
+// console.log(4/0);
 
-//new : bir çocuğun dünyaya gelmesidir.
-//null: bir vefat etmesi 
-//zero != null
-//this ==> bu 
+// //new : bir çocuğun dünyaya gelmesidir.
+// //null: bir vefat etmesi 
+// //zero != null
+// //this ==> bu 
 
-//escape character
-console.log("1.satır")
-console.log("2.satır")
+// //escape character
+// console.log("1.satır")
+// console.log("2.satır")
+// console.log("3.satır\n\t4.satır");
 
-console.log("3.satır\n\t4.satır")
+//break: döngüyü kırmak.
+//return: metotu kırmak.
+//continue: 1 kereye mahsus es geç sonra devam et.
+
+/////////////////////////////////////////////////////////////////////
+//MATH:
+console.log(Math.min(1,55,66,100,-99));
+console.log(Math.max(1,55,66,100,-99));
+console.log(Math.sqrt(25));
+console.log(Math.pow(2,5));
+console.log(Math.abs(-44));
+
+console.log(Math.floor(5.9));
+console.log(Math.ceil(5.1));
+console.log(Math.round(7.5));
+console.log(Math.round(7.4));
+
+console.log(Math.round(Math.random()*10+1));
+
+console.log(Math.sin(45));
