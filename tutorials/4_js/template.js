@@ -118,17 +118,46 @@
 
 /////////////////////////////////////////////////////////////////////
 //MATH:
-console.log(Math.min(1,55,66,100,-99));
-console.log(Math.max(1,55,66,100,-99));
-console.log(Math.sqrt(25));
-console.log(Math.pow(2,5));
-console.log(Math.abs(-44));
+// console.log(Math.min(1,55,66,100,-99));
+// console.log(Math.max(1,55,66,100,-99));
+// console.log(Math.sqrt(25));
+// console.log(Math.pow(2,5));
+// console.log(Math.abs(-44));
 
-console.log(Math.floor(5.9));
-console.log(Math.ceil(5.1));
-console.log(Math.round(7.5));
-console.log(Math.round(7.4));
+// console.log(Math.floor(5.9));
+// console.log(Math.ceil(5.1));
+// console.log(Math.round(7.5));
+// console.log(Math.round(7.4));
 
-console.log(Math.round(Math.random()*10+1));
+// console.log(Math.round(Math.random()*10+1));
+// console.log(Math.sin(45));
 
-console.log(Math.sin(45));
+/////////////////////////////////////////////////////////////////////
+//SAYISAL:
+let sayi1=55;
+console.log(sayi1)
+
+let sayi2=44.55555;
+console.log(sayi2);
+console.log(typeof sayi2);
+
+//metinsel ==> sayıya çevirmek istiyorsak
+let metin="66";
+let sayi3=Number(metin);
+
+//ES
+// const sayi4=Number(prompt("Lütfen sayı giriniz"));
+// console.log(Math.pow(sayi4,2));
+// console.log(sayi4**2);
+
+//toFixed ==> virgülden sonra yuvarlamak
+const sayi5=89.12345678;
+console.log(sayi5.toFixed(4));
+
+// Bilimsel gösterim
+let bilimsel=13E+4;
+console.log(bilimsel)
+
+
+/////////////////////////////////////////////////////////////////////
+//METINSEL:
