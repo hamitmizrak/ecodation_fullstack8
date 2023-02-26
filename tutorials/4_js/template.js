@@ -144,6 +144,7 @@ console.log(typeof sayi2);
 //metinsel ==> sayıya çevirmek istiyorsak
 let metin="66";
 let sayi3=Number(metin);
+let sayi4=parseInt(metin);
 
 //ES
 // const sayi4=Number(prompt("Lütfen sayı giriniz"));
@@ -154,9 +155,30 @@ let sayi3=Number(metin);
 const sayi5=89.12345678;
 console.log(sayi5.toFixed(4));
 
-// Bilimsel gösterim
+// Bilimsel gösterim 
 let bilimsel=13E+4;
 console.log(bilimsel)
+
+// Ters Bilimsel gösterim 
+let deneme=560000;
+console.log(deneme.toExponential(1));
+
+//sayı sistemleri
+//binary(2)       ==> 0,1
+let binary=0b01101;
+console.log(binary);
+
+//octal(8)        ==> 0.1.2.3.4.5.6.7
+let octal=0o01101;
+console.log(octal);
+
+//decimal(10)     ==> 0.1.2.3.4.5.6.7.8.9
+let decimal=123456;
+console.log(decimal);
+
+//hexadecimal(16) ==>0.1.2.3.4.5.6.7.8.9.a,b,c,d,e,f
+let hexadecimal=0xabc123;
+console.log(hexadecimal);
 
 
 /////////////////////////////////////////////////////////////////////
