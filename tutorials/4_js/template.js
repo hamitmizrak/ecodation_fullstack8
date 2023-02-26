@@ -84,8 +84,31 @@
 //cast
 //sayıya Number();
 //kelime String();
-let number1=14,number2="16";
-let number3=Number(number2);
+// let number1=14,number2="16";
+// let number3=Number(number2);
 
-console.log(number1+number2);
-console.log(number1+number3);
+// console.log(number1+number2);
+// console.log(number1+number3);
+
+//undefined 
+let data1=0;
+console.log(data1);
+
+//NaN
+console.log(4/4)
+console.log(4/"4")
+console.log(4/"asd")
+
+//infinity 
+console.log(4/0);
+
+//new : bir çocuğun dünyaya gelmesidir.
+//null: bir vefat etmesi 
+//zero != null
+//this ==> bu 
+
+//escape character
+console.log("1.satır")
+console.log("2.satır")
+
+console.log("3.satır\n\t4.satır")
