@@ -56,8 +56,8 @@
 
 //operatorler
 //+ - * / %
-var number1=10;
-var number2=2;
+// var number1=10;
+// var number2=2;
 // console.log(number1+number2);
 // console.log(number1-number2);
 // console.log(number1*number2);
@@ -78,5 +78,14 @@ var number2=2;
 // let number2=10;
 
 //Kullanıcıdan veri almak istersek
-let userData=prompt("Lütfen adınızı girinizi");
-console.log(userData);
+// let userData=prompt("Lütfen adınızı girinizi");
+// console.log(userData);
+
+//cast
+//sayıya Number();
+//kelime String();
+let number1=14,number2="16";
+let number3=Number(number2);
+
+console.log(number1+number2);
+console.log(number1+number3);
