@@ -276,36 +276,61 @@ let usernameAndSurnameMasking = () => {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Function
 //1- returnsuzParametresiz
-function returnsuzParametresiz(){
-    console.log("1- returnsuz Parametresiz")
-}
-returnsuzParametresiz()
+// function returnsuzParametresiz(){
+//     console.log("1- returnsuz Parametresiz")
+// }
+// returnsuzParametresiz()
 
-//2- returnsuzParametreli
-function returnsuzParametreli(name,surname){
-    console.log("2- returnsuz Parametreli: "+name.concat(" "+surname));
-}
-returnsuzParametreli("adım","soyadım")
+// //2- returnsuzParametreli
+// function returnsuzParametreli(name,surname){
+//     console.log("2- returnsuz Parametreli: "+name.concat(" "+surname));
+// }
+// returnsuzParametreli("adım","soyadım")
 
-//3- returnluParametresiz
-function returnluParametresiz(){
-    return "3- returnluParametresiz";
-}
-let data3=returnluParametresiz();
-console.log(data3);
+// //3- returnluParametresiz
+// function returnluParametresiz(){
+//     return "3- returnluParametresiz";
+// }
+// let data3=returnluParametresiz();
+// console.log(data3);
 
 
-//4- returnluParametreli
-function returnluParametreli(name){
-    return "4- returnluParametreli "+name;
-}
-let data4=returnluParametreli("Adım55");
-console.log(data4);
+// //4- returnluParametreli
+// function returnluParametreli(name){
+//     return "4- returnluParametreli "+name;
+// }
+// let data4=returnluParametreli("Adım55");
+// console.log(data4);
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // conditional(if else )
+
+function conditional() {
+    let number = 4;
+    if (number > 0) {
+        console.log("pozitif sayı")
+    } else {
+        console.log("negatif sayı")
+    }
+}
+conditional()
+
 // Ternary
+function conditional2() {
+    let number = 4;
+
+    let result = (number > 0) ? "pozitif sayı" : "negatif sayı";
+    console.log(result)
+
+}
+conditional()
+
+// conditional(if else )
 // Switch case
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Loop for-while-doWhile
 // forin forof
 // break continue return
