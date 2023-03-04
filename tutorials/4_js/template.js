@@ -469,7 +469,6 @@ loopData2()
 //eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
 
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // exception handling try-catch
 
