@@ -507,7 +507,7 @@
 
 let usernameAndSurnameMasking2 = () => {
     const usernameAndSurname = prompt("Adınız ve Soyadınız");
-    let username,surname;
+    let username, surname;
 
     username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
     for (let i = 1; i < username.length; i++) {
@@ -553,46 +553,86 @@ Java ile yapıldı.
 */
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // normal function 
-function normal(){
+function normal() {
     console.log("normal");
 }
 normal()
 
 // anonymous function
-let anonymous=function (){
+let anonymous = function () {
     console.log("anonymous");
 }
 //anonymous();
 
 // anonymous function
-let arrow= ()=>{
+let arrow = () => {
     console.log("arrow");
 }
 //arrow()
 
 
+
 // setTimeOut
 // setTimeout(function(){
-//     console.log("setTimeOut");
+//     alert("Admin Hoşgeldiniz");
 // },3000);
 
 // callbackfunction
-function birinci(number){
-    console.log("birinci: "+Math.sqrt(number));
+function birinci(number) {
+    console.log("birinci: " + Math.sqrt(number));
 }
 
-
-function ikinci(callbackfn){
+function ikinci(callbackfn) {
     console.log("ikinci")
-    let data=Number(prompt("Lütfen sayı giriniz"));
+    let data = Number(prompt("Lütfen sayı giriniz"));
     callbackfn(data)
 }
-ikinci(birinci);
+//ikinci(birinci);
 //Monad: bir function çıktısı başkasının girdisi ise biz buna monad diyoruz.
 
-
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // promise
-// asyn-await
+let promiseData = () => {
+    // pending : bekleme
+    // resolved: başarılı 
+    // rejected: başarısız
+
+    //1.
+    // const promise1=new Promise((resolve,rejected)=>{
+    //     resolve("Merhabalar pozitif");
+    // });
+    // console.log(promise1);
+
+    //2.
+    const promise1 = new Promise((resolve, rejected) => {
+        rejected("Merhabalar negatif");
+
+    });
+    console.log(promise1);
+}
+//promiseData()
+
+/// 
+
+let promiseData2 = () => {
+
+    //1.
+    const promise1 = new Promise((resolve, rejected) => {
+        resolve("Merhabalar pozitif");
+        rejected("Merhabalar negatif");
+    });
+    console.log(promise1);
+
+    promise1.then((temp) => {
+        console.log(temp)
+    })
+        .catch((error) => {
+            console.error("is not connected")
+        });
+}
+promiseData2()
+
+
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // software prensible DRY, KISS, YAGNI, Dummy Code, Clean Code
