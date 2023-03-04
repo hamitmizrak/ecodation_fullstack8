@@ -257,21 +257,21 @@
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-let usernameAndSurnameMasking = () => {
-    const usernameAndSurname = prompt("Adınız ve Soyadınız");
+// let usernameAndSurnameMasking = () => {
+//     const usernameAndSurname = prompt("Adınız ve Soyadınız");
 
-    let username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
-    for (let i = 1; i < username.length; i++) {
-        username = username.replace(username.charAt(i), "*");
-    }
-    console.log(username.toUpperCase());
+//     let username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
+//     for (let i = 1; i < username.length; i++) {
+//         username = username.replace(username.charAt(i), "*");
+//     }
+//     console.log(username.toUpperCase());
 
-    let surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length).toLocaleUpperCase();
-    for (let i = 3; i < surname.length; i++) {
-        surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
-    }
-    console.log(surname.toUpperCase());
-}
+//     let surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length).toLocaleUpperCase();
+//     for (let i = 3; i < surname.length; i++) {
+//         surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
+//     }
+//     console.log(surname.toUpperCase());
+// }
 //usernameAndSurnameMasking();
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Function
@@ -305,76 +305,76 @@ let usernameAndSurnameMasking = () => {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // conditional(if else )
 
-function conditional() {
-    let number = 4;
-    if (number > 0) {
-        console.log("pozitif sayı")
-    } else {
-        console.log("negatif sayı")
-    }
-}
+// function conditional() {
+//     let number = 4;
+//     if (number > 0) {
+//         console.log("pozitif sayı")
+//     } else {
+//         console.log("negatif sayı")
+//     }
+// }
 //conditional()
 
 // Ternary
-function conditional2() {
-    let number = 4;
+// function conditional2() {
+//     let number = 4;
 
-    let result = (number > 0) ? "pozitif sayı" : "negatif sayı";
-    console.log(result)
-}
+//     let result = (number > 0) ? "pozitif sayı" : "negatif sayı";
+//     console.log(result)
+// }
 //conditional2()
 
 // conditional(if else )
-function conditional3() {
-    let number = 4;
-    if (number === 1) {
-        console.log("1")
-    } else if (number === 2) {
-        console.log("2")
-    } else if (number === 3) {
-        console.log("3")
-    } else if (number === 4) {
-        console.log("4")
-    } else if (number === 5) {
-        console.log("5")
-    } else {
-        console.log("1<=X<=5 dışındadır")
-    }
-}
+// function conditional3() {
+//     let number = 4;
+//     if (number === 1) {
+//         console.log("1")
+//     } else if (number === 2) {
+//         console.log("2")
+//     } else if (number === 3) {
+//         console.log("3")
+//     } else if (number === 4) {
+//         console.log("4")
+//     } else if (number === 5) {
+//         console.log("5")
+//     } else {
+//         console.log("1<=X<=5 dışındadır")
+//     }
+// }
 //conditional3()
 
 
 // Switch case
-function conditional4() {
-    let number = 4;
+// function conditional4() {
+//     let number = 4;
 
-    switch (number) {
-        case 1:
-            console.log("1")
-            break;
+//     switch (number) {
+//         case 1:
+//             console.log("1")
+//             break;
 
-        case 2:
-            console.log("2")
-            break;
+//         case 2:
+//             console.log("2")
+//             break;
 
-        case 3:
-            console.log("3")
-            break;
+//         case 3:
+//             console.log("3")
+//             break;
 
-        case 4:
-            console.log("4")
-            break;
+//         case 4:
+//             console.log("4")
+//             break;
 
-        case 5:
-            console.log("5")
-            break;
+//         case 5:
+//             console.log("5")
+//             break;
 
-        default:
-            console.log("1<=X<=5 dışındadır")
-            break;
-    }
+//         default:
+//             console.log("1<=X<=5 dışındadır")
+//             break;
+//     }
 
-}
+// }
 //conditional4()
 
 /////////////////////////////////////////////////////////conditional
@@ -384,39 +384,39 @@ function conditional4() {
 // Loop for-while-doWhile
 //function loopData(){}
 //Anonymous function
-let loopData = function () {
-    let sum = 0;
-    for (let i = 1; i <= 10; i++) {
-        sum = sum + i;
-    }
-    console.log(sum)
-}
-loopData();
+// let loopData = function () {
+//     let sum = 0;
+//     for (let i = 1; i <= 10; i++) {
+//         sum = sum + i;
+//     }
+//     console.log(sum)
+// }
+//loopData();
 
 //while
-let loopData2 = () => {
-    let sum = 0;
-    let i = 1;
-    while (i <= 10) {
-        sum = sum + i;
-        i++;
-    }
-    console.log(sum)
-}
-loopData2()
+// let loopData2 = () => {
+//     let sum = 0;
+//     let i = 1;
+//     while (i <= 10) {
+//         sum = sum + i;
+//         i++;
+//     }
+//     console.log(sum)
+// }
+//loopData2()
 
 
 //do while
-let loopData3 = () => {
-    let sum = 0;
-    let i = 1;
-    do {
-        sum = sum + i;
-        i++;
-    } while (i <= 10);
-    console.log(sum)
-}
-loopData2()
+// let loopData3 = () => {
+//     let sum = 0;
+//     let i = 1;
+//     do {
+//         sum = sum + i;
+//         i++;
+//     } while (i <= 10);
+//     console.log(sum)
+// }
+//loopData2()
 
 // break continue return
 
@@ -471,44 +471,47 @@ loopData2()
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // exception handling try-catch
-
 //try catch finally
-
-try {
-    merhabalar
-} catch (error) {
-    console.error(error);
-    console.log(error.name);
-    console.log(error.message);
-}finally{
-    console.log("api.close()");
-}
+// try {
+//     merhabalar
+// } catch (error) {
+//     console.error(error);
+//     console.log(error.name);
+//     console.log(error.message);
+// }finally{
+//     console.log("api.close()");
+// }
 
 //bazen kendimize zorunlu olarak istisnalar meydana getirmek isteriz.
 //throw  "data44"
-throw new "data44"
+//throw new "data44"
 
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // debug atmak
-
-
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
 let usernameAndSurnameMasking2 = () => {
     const usernameAndSurname = prompt("Adınız ve Soyadınız");
+    let username,surname;
 
-    let username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
+    username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
     for (let i = 1; i < username.length; i++) {
         username = username.replace(username.charAt(i), "*");
     }
     console.log(username.toUpperCase());
 
-    let surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length).toLocaleUpperCase();
+    surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length);
     for (let i = 3; i < surname.length; i++) {
         surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
     }
     console.log(surname.toUpperCase());
 }
-//usernameAndSurnameMasking2();
+usernameAndSurnameMasking2();
 
 // software prensible DRY,KISS, YAGNI, Dummy Code,Clean Code
 // SOLID
