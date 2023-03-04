@@ -341,7 +341,7 @@ function conditional3() {
         console.log("1<=X<=5 dışındadır")
     }
 }
-conditional3()
+//conditional3()
 
 
 // Switch case
@@ -375,14 +375,74 @@ function conditional4() {
     }
 
 }
-conditional4()
+//conditional4()
 
+/////////////////////////////////////////////////////////conditional
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Loop for-while-doWhile
+//function loopData(){}
+//Anonymous function
+let loopData = function () {
+    let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
+    }
+    console.log(sum)
+}
+
+loopData();
+
+
+let loopData2 = () => {
+    let sum = 0;
+    let i = 1;
+    while (i <= 10) {
+        sum = sum + i;
+        i++;
+    }
+    console.log(sum)
+}
+loopData2()
+
+
+
+let loopData3 = () => {
+    let sum = 0;
+    let i = 1;
+    do {
+        sum = sum + i;
+        i++;
+    } while (i <= 10);
+    console.log(sum)
+}
+loopData2()
+
+
 // forin forof
 // break continue return
+
+//ÖDEV
+//ÖDEV (if-else for break continue)
+//Fonksiyonlarla
+//Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
+//kullancı: 5 verdi diyelim 1<=X<=5
+//1.adım: kaç tane sayı var ?
+//2.adım: sayı toplamları var ?
+//3.adım: kaç tane tek  sayı var ?
+//4.adım: tek sayılar toplamı ?
+//5.adım: tek sayılar gösterelim ?
+//6.adım: kaç tane çift  sayı var ?
+//7.adım: çift sayılar toplamı ?
+//8.adım: çift sayılar gösterelim ?
+//Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+//Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın  (break)
+//Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // exception handling try-catch
 // debug atmak
 // software prensible DRY,KISS, YAGNI, Dummy Code,Clean Code
