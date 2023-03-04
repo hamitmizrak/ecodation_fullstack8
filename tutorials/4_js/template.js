@@ -391,10 +391,9 @@ let loopData = function () {
     }
     console.log(sum)
 }
-
 loopData();
 
-
+//while
 let loopData2 = () => {
     let sum = 0;
     let i = 1;
@@ -407,7 +406,7 @@ let loopData2 = () => {
 loopData2()
 
 
-
+//do while
 let loopData3 = () => {
     let sum = 0;
     let i = 1;
@@ -419,8 +418,6 @@ let loopData3 = () => {
 }
 loopData2()
 
-
-// forin forof
 // break continue return
 
 //ÖDEV
@@ -442,9 +439,78 @@ loopData2()
 //Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
 
 
+
+//NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
+//NOT: değişken olarak var,let,const kullanalım.
+//NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
+//NOT: değişken olarak var,let,const kullanalım.
+//Örnek-1
+//y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
+//Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
+//örnek-2
+//Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
+//Formül: (derece*9/5)+32
+//örnek-3 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
+//4+3*2(3:3-1*6+9:1+(3:3))
+
+//Örnek-4: Aşağıdaki örnekleri math ile çözelim ?
+// -5.9 sayıyının aşağıdaki işlemleri yaptıralım ?
+// 1-mutlak değeri alsın 5.9
+// 2-yuvarlama yapsın  6.0
+// 3-karesini alsın 36.00
+// 4-karekök alsın 6.0
+// 5-yuvarlama yapsın 6.0
+// 6-)çıkan sonucu 5 bölsün 6/5=1
+// 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+// Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
+//NOT: cast kullalım ?
+// Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
+//eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // exception handling try-catch
+
+//try catch finally
+
+try {
+    merhabalar
+} catch (error) {
+    console.error(error);
+    console.log(error.name);
+    console.log(error.message);
+}finally{
+    console.log("api.close()");
+}
+
+//bazen kendimize zorunlu olarak istisnalar meydana getirmek isteriz.
+//throw  "data44"
+throw new "data44"
+
+
 // debug atmak
+
+
+
+let usernameAndSurnameMasking2 = () => {
+    const usernameAndSurname = prompt("Adınız ve Soyadınız");
+
+    let username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
+    for (let i = 1; i < username.length; i++) {
+        username = username.replace(username.charAt(i), "*");
+    }
+    console.log(username.toUpperCase());
+
+    let surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length).toLocaleUpperCase();
+    for (let i = 3; i < surname.length; i++) {
+        surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
+    }
+    console.log(surname.toUpperCase());
+}
+//usernameAndSurnameMasking2();
+
 // software prensible DRY,KISS, YAGNI, Dummy Code,Clean Code
 // SOLID
 // setTimeOut
