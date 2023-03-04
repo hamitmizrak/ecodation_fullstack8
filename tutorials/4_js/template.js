@@ -488,13 +488,13 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // debug atmak
-let data=()=>{
-    let number1=10,number2=20,number3;
-    number3=number1+number2;
-    console.log(number3);
-}
+// let data=()=>{
+//     let number1=10,number2=20,number3;
+//     number3=number1+number2;
+//     console.log(number3);
+// }
 
-data()
+// data()
 
 
 
@@ -521,7 +521,7 @@ let usernameAndSurnameMasking2 = () => {
     }
     console.log(surname.toUpperCase());
 }
-usernameAndSurnameMasking2();
+//usernameAndSurnameMasking2();
 
 /*
 Java ile yapıldı. 
@@ -551,13 +551,52 @@ Java ile yapıldı.
     }
 }
 */
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// normal function 
+function normal(){
+    console.log("normal");
+}
+normal()
+
+// anonymous function
+let anonymous=function (){
+    console.log("anonymous");
+}
+//anonymous();
+
+// anonymous function
+let arrow= ()=>{
+    console.log("arrow");
+}
+//arrow()
 
 
-// software prensible DRY,KISS, YAGNI, Dummy Code,Clean Code
-// SOLID
 // setTimeOut
+// setTimeout(function(){
+//     console.log("setTimeOut");
+// },3000);
+
 // callbackfunction
+function birinci(number){
+    console.log("birinci: "+Math.sqrt(number));
+}
+
+
+function ikinci(callbackfn){
+    console.log("ikinci")
+    let data=Number(prompt("Lütfen sayı giriniz"));
+    callbackfn(data)
+}
+ikinci(birinci);
+//Monad: bir function çıktısı başkasının girdisi ise biz buna monad diyoruz.
+
+
 // promise
 // asyn-await
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// software prensible DRY, KISS, YAGNI, Dummy Code, Clean Code
+// SOLID
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Dizi
