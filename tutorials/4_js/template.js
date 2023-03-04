@@ -11,7 +11,7 @@
 
 /*
 
-*/ 
+*/
 // window.document.write("Ekranda göster");
 // window.console.log("Log");
 // window.console.warn("warning");
@@ -257,19 +257,63 @@
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
+let usernameAndSurnameMasking = () => {
+    const usernameAndSurname = prompt("Adınız ve Soyadınız");
 
+    let username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
+    for (let i = 1; i < username.length; i++) {
+        username = username.replace(username.charAt(i), "*");
+    }
+    console.log(username.toUpperCase());
+
+    let surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length).toLocaleUpperCase();
+    for (let i = 3; i < surname.length; i++) {
+        surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
+    }
+    console.log(surname.toUpperCase());
+}
+//usernameAndSurnameMasking();
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Function
+//1- returnsuzParametresiz
+function returnsuzParametresiz(){
+    console.log("1- returnsuz Parametresiz")
+}
+returnsuzParametresiz()
+
+//2- returnsuzParametreli
+function returnsuzParametreli(name,surname){
+    console.log("2- returnsuz Parametreli: "+name.concat(" "+surname));
+}
+returnsuzParametreli("adım","soyadım")
+
+//3- returnluParametresiz
+function returnluParametresiz(){
+    return "3- returnluParametresiz";
+}
+let data3=returnluParametresiz();
+console.log(data3);
+
+
+//4- returnluParametreli
+function returnluParametreli(name){
+    return "4- returnluParametreli "+name;
+}
+let data4=returnluParametreli("Adım55");
+console.log(data4);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // conditional(if else )
 // Ternary
 // Switch case
 // Loop for-while-doWhile
 // forin forof
-// break continue return 
+// break continue return
 // exception handling try-catch
-// debug atmak 
+// debug atmak
 // software prensible DRY,KISS, YAGNI, Dummy Code,Clean Code
 // SOLID
-// setTimeOut 
+// setTimeOut
 // callbackfunction
 // promise
 // asyn-await
