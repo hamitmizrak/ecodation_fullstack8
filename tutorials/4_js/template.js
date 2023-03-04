@@ -573,9 +573,21 @@ let arrow = () => {
 
 
 // setTimeOut
-// setTimeout(function(){
-//     alert("Admin Hoşgeldiniz");
-// },3000);
+setTimeout(function(){
+    alert("1.Admin Hoşgeldiniz");
+},3000);
+
+// setTimeOut
+setTimeout(()=>{
+    alert("2.Admin Hoşgeldiniz");
+},2000);
+
+// setTimeOut
+let data= () => {
+    alert("3.Admin Hoşgeldiniz")
+}
+setTimeout(data(),1000);
+
 
 // callbackfunction
 function birinci(number) {
@@ -612,10 +624,8 @@ let promiseData = () => {
 }
 //promiseData()
 
-/// 
 
 let promiseData2 = () => {
-
     //1.
     const promise1 = new Promise((resolve, rejected) => {
         resolve("Merhabalar pozitif");
@@ -636,6 +646,11 @@ promiseData2()
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // software prensible DRY, KISS, YAGNI, Dummy Code, Clean Code
+// DRY:Kendini tekrarlama 
+// KISS: her zamana en kısa yolda çözüme git 
+// YAGNI: Gereksizlikten uzak dur . 
+// Dummy code: interface kullanmadığın gövdesiz metot kullanma 
+// clean code: ideal kod yazma sanatı
 // SOLID
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
