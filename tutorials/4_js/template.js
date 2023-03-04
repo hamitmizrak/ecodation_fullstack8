@@ -313,7 +313,7 @@ function conditional() {
         console.log("negatif sayı")
     }
 }
-conditional()
+//conditional()
 
 // Ternary
 function conditional2() {
@@ -321,12 +321,61 @@ function conditional2() {
 
     let result = (number > 0) ? "pozitif sayı" : "negatif sayı";
     console.log(result)
-
 }
-conditional()
+//conditional2()
 
 // conditional(if else )
+function conditional3() {
+    let number = 4;
+    if (number === 1) {
+        console.log("1")
+    } else if (number === 2) {
+        console.log("2")
+    } else if (number === 3) {
+        console.log("3")
+    } else if (number === 4) {
+        console.log("4")
+    } else if (number === 5) {
+        console.log("5")
+    } else {
+        console.log("1<=X<=5 dışındadır")
+    }
+}
+conditional3()
+
+
 // Switch case
+function conditional4() {
+    let number = 4;
+
+    switch (number) {
+        case 1:
+            console.log("1")
+            break;
+
+        case 2:
+            console.log("2")
+            break;
+
+        case 3:
+            console.log("3")
+            break;
+
+        case 4:
+            console.log("4")
+            break;
+
+        case 5:
+            console.log("5")
+            break;
+
+        default:
+            console.log("1<=X<=5 dışındadır")
+            break;
+    }
+
+}
+conditional4()
 
 
 
