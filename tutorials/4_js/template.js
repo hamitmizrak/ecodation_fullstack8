@@ -720,8 +720,8 @@ const arr2 = () => {
         console.log(`${index} => ${value}`);
     });
 
-    console.log("String'e çevir: "+dizi.toString());
-    console.log(" "+dizi.join("-"));
+    console.log("String'e çevir: " + dizi.toString());
+    console.log(" " + dizi.join("-"));
 }
 //arr2()
 
@@ -729,7 +729,7 @@ const arr2 = () => {
 // ES5 forEach 
 const arrForEach = () => {
     let dizi = arrData();
-    dizi.forEach( (value, index, array) =>{
+    dizi.forEach((value, index, array) => {
         console.log(`${index} => ${value}`);
     });
 }
@@ -738,9 +738,9 @@ const arrForEach = () => {
 //filter: istediklerimizi almak
 const arrFilter = () => {
     let dizi = arrData();
-   let data1= dizi.filter( (value, index, array) =>{
-        return value>=5
-    }).forEach( (value, index, array) =>{
+    let data1 = dizi.filter((value, index, array) => {
+        return value >= 5
+    }).forEach((value, index, array) => {
         console.log(`${index} => ${value}`);
     });
 }
@@ -749,9 +749,9 @@ const arrFilter = () => {
 //map: her bir elemana erişir.
 const arrMap = () => {
     let dizi = arrData();
-   let data1= dizi.map( (value, index, array) =>{
-        return value*5
-    }).forEach( (value, index, array) =>{
+    let data1 = dizi.map((value, index, array) => {
+        return value * 5
+    }).forEach((value, index, array) => {
         console.log(`${index} => ${value}`);
     });
 }
@@ -767,26 +767,53 @@ clean code: ideal kod yazma sanatı
 */
 //array ==> forEach(ES5), filter(ES5), interpolation(ES6)
 //1-) 6 tane dizi elemanı olan ve bunlara random sayılar atayıp bu sonucu bir dizide functionda gösterelim(fonksiyon adı: randomArray)
-let randomArray=()=>{
-    let arr=[];
+let randomArray = () => {
+    let arr = [];
     for (let i = 0; i < 6; i++) {
-     arr[i]=Math.round(Math.random()*9+1);
+        arr[i] = Math.round(Math.random() * 9 + 1);
     }
-  console.log(arr)
-  return arr;
+    //console.log(arr)
+    return arr;
 }
-randomArray()
+//randomArray()
 
+//2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
+let randomForEach = () => {
+    let arr = randomArray().forEach((value) => {
+        console.log(`${value}`);
+    });
+
+}
+//randomForEach()
+
+// 3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
+// 4-) bu elde ettiğimiz çift sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
+// 5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
+// 6-) bu çift sayıların her birinin karesini alalım ve diziye verelim.. (tips:Math.pow(sayı,2) dizi.map())
+
+let randomFilter= () => {
+    let counter=0,sum=0; 
+
+    let arr = randomArray().filter((value)=>{
+            return value%2==0 });
+    arr.sort();
+    console.log(arr);
+
+    for (let i = 0; i < arr.length; i++) {
+        sum+=arr[i];
+        counter++;
+    }
+    console.log("Toplamı: "+sum);
+    console.log("adeti: "+counter);
+
+  let arr2=  arr.map((value) =>{
+        return   Math.pow(value,2); 
+    })
+    console.log("karesi:"+arr2);
+}
+randomFilter()
 /*
-2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
-3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
-4-) bu elde ettiğimiz çift sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
-5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
-6-) bu çift sayıların her birinin karesini alalım ve diziye verelim.. (tips:Math.pow(sayı,2) dizi.map())
-
-
 7-) bu elde ettiğimiz tek sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
 8-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
 9-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
-
 */
