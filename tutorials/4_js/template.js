@@ -735,7 +735,7 @@ const arrForEach = () => {
 }
 //arrForEach()
 
-
+//filter: istediklerimizi almak
 const arrFilter = () => {
     let dizi = arrData();
    let data1= dizi.filter( (value, index, array) =>{
@@ -746,12 +746,36 @@ const arrFilter = () => {
 }
 //arrFilter();
 
+//map: her bir elemana erişir.
+const arrMap = () => {
+    let dizi = arrData();
+   let data1= dizi.map( (value, index, array) =>{
+        return value*5
+    }).forEach( (value, index, array) =>{
+        console.log(`${index} => ${value}`);
+    });
+}
+arrMap();
+
 /* 
-ES5 forEach, filter, interpolation, array
+DİKKAT:
+DRY:Kendini tekrarlama 
+KISS: her zamana en kısa yolda çözüme git 
+YAGNI: Gereksizlikten uzak dur . 
+Dummy code: interface kullanmadığın gövdesiz metot kullanma 
+clean code: ideal kod yazma sanatı
+
+array ==> forEach(ES5), filter(ES5), interpolation(ES6)
 1-) 6 tane dizi elemanı olan ve bunlara random sayılar atayıp bu sonucu bir dizide functionda gösterelim(fonksiyon adı: randomArray)
 2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
 3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
-4-) bu elde ettiğimiz çift sayıları başka bir dizide gösterelim.
+4-) bu elde ettiğimiz çift sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
 5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
+6-) bu çift sayıların sonuna 10 ekleyin (tips:dizi.map())
+
+
+7-) bu elde ettiğimiz tek sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
+8-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
+9-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
 
 */
