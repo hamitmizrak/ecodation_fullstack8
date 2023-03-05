@@ -886,6 +886,11 @@ object3();
 
 //verilen bir sayının karesini alan yeni bir fonksiyon özelliği 
 let object4 = () => {
-    
+    String.prototype.karesi = function (data) {
+        return Math.pow(data, 2);
+    }
+    console.log("".karesi(5))
 }
 object4();
+
+//verilen bir sayının karekökünü alan yeni bir fonksiyon özelliği 
