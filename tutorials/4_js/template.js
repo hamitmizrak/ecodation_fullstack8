@@ -868,6 +868,24 @@ let object2 = () => {
 
     let result = new Person("adı", "soyadı");
     //console.log(result);
+    console.log(result.hasOwnProperty("name"));
 
 }
-object2()
+//object2();
+
+
+//built in constructor: kendi fonksiyonumuzu eklemek
+let object3 = () => {
+    String.prototype.tekrar = function (data) {
+        return new Array(data + 1).join(this);
+    }
+
+    console.log("java".tekrar(2))
+}
+object3();
+
+//verilen bir sayının karesini alan yeni bir fonksiyon özelliği 
+let object4 = () => {
+    
+}
+object4();
