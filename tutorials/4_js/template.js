@@ -833,9 +833,9 @@ let object = () => {
         },
         ramComputerDevice: {
             name: "msi 78Xl",
-            price:4000
+            price: 4000
         },
-        dizi:[44,34,55,12,25]
+        dizi: [44, 34, 55, 12, 25]
     };
     console.log(computer)
     console.log(computer.name)
@@ -846,14 +846,28 @@ let object = () => {
     console.log(computer.information())
     console.log(computer.ramComputerDevice.price);
 
-    computer.year="2023";
+    computer.year = "2023";
     console.log(computer.year)
 
-    console.log( computer.dizi)
-    console.log( computer.dizi[0]);
+    console.log(computer.dizi)
+    console.log(computer.dizi[0]);
 
-    console.log( computer.ramComputerDevice.name);
-    console.log( computer["ramComputerDevice"]["name"]); //nested object variable
-    
+    console.log(computer.ramComputerDevice.name);
+    console.log(computer["ramComputerDevice"]["name"]); //nested object variable
+
 }
-object()
+//object()
+
+
+let object2 = () => {
+    let Person = function (name, surname) {
+        this.name = name;
+        this.surname = surname;
+        console.log(this)
+    }
+
+    let result = new Person("adı", "soyadı");
+    //console.log(result);
+
+}
+object2()
