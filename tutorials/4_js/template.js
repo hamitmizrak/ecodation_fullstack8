@@ -791,29 +791,69 @@ let randomForEach = () => {
 // 5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
 // 6-) bu çift sayıların her birinin karesini alalım ve diziye verelim.. (tips:Math.pow(sayı,2) dizi.map())
 
-let randomFilter= () => {
-    let counter=0,sum=0; 
+let randomFilter = () => {
+    let counter = 0, sum = 0;
 
-    let arr = randomArray().filter((value)=>{
-            return value%2==0 });
+    let arr = randomArray().filter((value) => {
+        return value % 2 == 0
+    });
     arr.sort();
     console.log(arr);
 
     for (let i = 0; i < arr.length; i++) {
-        sum+=arr[i];
+        sum += arr[i];
         counter++;
     }
-    console.log("Toplamı: "+sum);
-    console.log("adeti: "+counter);
+    console.log("Toplamı: " + sum);
+    console.log("adeti: " + counter);
 
-  let arr2=  arr.map((value) =>{
-        return   Math.pow(value,2); 
+    let arr2 = arr.map((value) => {
+        return Math.pow(value, 2);
     })
-    console.log("karesi:"+arr2);
+    console.log("karesi:" + arr2);
 }
-randomFilter()
+//randomFilter()
 /*
 7-) bu elde ettiğimiz tek sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
 8-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
 9-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
 */
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//OBJECT
+let object = () => {
+
+    let computer = {
+        name: "msi gl65",
+        trade: "msi",
+        'price': 12000,
+        hight: true,
+        information: function () {
+            return "mainboard: SteelSeries".concat("Ram 32")
+        },
+        ramComputerDevice: {
+            name: "msi 78Xl",
+            price:4000
+        },
+        dizi:[44,34,55,12,25]
+    };
+    console.log(computer)
+    console.log(computer.name)
+    console.log(computer.trade)
+    console.log(computer.price)
+    console.log(computer.hight)
+    console.log(typeof computer.hight)
+    console.log(computer.information())
+    console.log(computer.ramComputerDevice.price);
+
+    computer.year="2023";
+    console.log(computer.year)
+
+    console.log( computer.dizi)
+    console.log( computer.dizi[0]);
+
+    console.log( computer.ramComputerDevice.name);
+    console.log( computer["ramComputerDevice"]["name"]); //nested object variable
+    
+}
+object()
