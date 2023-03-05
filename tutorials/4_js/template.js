@@ -674,19 +674,22 @@ let arrFunction = () => {
     for (let temp in dizi) {
         console.log(temp + " ==> " + dizi[temp])
     }
+
     console.log("\n*********************")
     //3.YOL elemanlara erişim sağlamak
     //ES6
     for (let temp of dizi) {
         console.log(temp)
     }
+
     console.log("\n*********************")
     //4.YOL elemanlara erişim sağlamak
     //ES5
     dizi.forEach(function (value, index, array) {
-        console.log(index+" => "+  value);
+        console.log(index + " => " + value);
     });
     console.log("\n*********************")
+
     //5.YOL elemanlara erişim sağlamak
     //ES5 interpolation 
     dizi.forEach(function (value, index, array) {
@@ -694,4 +697,30 @@ let arrFunction = () => {
     });
 
 };
-arrFunction()
+//arrFunction()
+
+//dizi oluştur ve return kullan
+const arrData = () => {
+    let dizi = [5, 2, 3, 9, 1];
+    return dizi;
+}
+
+const arr2 = () => {
+    let dizi = arrData();
+    dizi.push("Diyarbakır"); // sona 1 eleman ekle
+    dizi.unshift("Sivas"); // başa 1 eleman ekle
+
+    dizi.pop();// sona 1 eleman çıkar
+    dizi.shift();// baştan 1 eleman çıkar.
+
+    //dizi.sort(); //küçükten büyüğe sıralamak
+    dizi.sort().reverse(); // büyükten küçüğe  sıralamak
+
+    dizi.forEach(function (value, index, array) {
+        console.log(`${index} => ${value}`);
+    });
+
+    console.log("String'e çevir: "+dizi.toString());
+    console.log(" "+dizi.join("-"));
+}
+arr2()
