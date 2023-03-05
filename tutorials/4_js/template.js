@@ -723,4 +723,33 @@ const arr2 = () => {
     console.log("String'e çevir: "+dizi.toString());
     console.log(" "+dizi.join("-"));
 }
-arr2()
+//arr2()
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+// ES5 forEach 
+const arrForEach = () => {
+    let dizi = arrData();
+    dizi.forEach( (value, index, array) =>{
+        console.log(`${index} => ${value}`);
+    });
+}
+//arrForEach()
+
+
+const arrFilter = () => {
+    let dizi = arrData();
+   let data1= dizi.filter( (value, index, array) =>{
+        return value>=5
+    }).forEach( (value, index, array) =>{
+        console.log(`${index} => ${value}`);
+    });
+}
+arrFilter();
+
+/*
+1-) 6 tane dizi elemanı olan ve bunlara random sayılar atayıp bu sonucu bir dizide functionda gösterelim(fonksiyon adı: randomArray)
+2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
+3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
+4-) 
+5-) 
+*/
