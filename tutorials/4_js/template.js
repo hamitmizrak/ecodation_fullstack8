@@ -744,12 +744,14 @@ const arrFilter = () => {
         console.log(`${index} => ${value}`);
     });
 }
-arrFilter();
+//arrFilter();
 
-/*
+/* 
+ES5 forEach, filter, interpolation, array
 1-) 6 tane dizi elemanı olan ve bunlara random sayılar atayıp bu sonucu bir dizide functionda gösterelim(fonksiyon adı: randomArray)
 2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
 3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
-4-) 
-5-) 
+4-) bu elde ettiğimiz çift sayıları başka bir dizide gösterelim.
+5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
+
 */
