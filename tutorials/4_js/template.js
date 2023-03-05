@@ -655,3 +655,43 @@ Java ile yapıldı.
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Dizi
+let arrFunction = () => {
+    let dizi = [44, "Malatya", true, "Antep", 43.34];
+    // console.log(dizi);
+    // console.log(dizi[0]);
+    // console.log(dizi[4]);
+    // console.log(dizi[dizi.length-1]);
+    // console.log(dizi.length)
+
+    //1.YOL elemanlara erişim sağlamak
+    for (let i = 0; i < dizi.length; i++) {
+        console.log(dizi[i])
+    }
+
+    console.log("\n*********************")
+    //2.YOL elemanlara erişim sağlamak
+    //ES6
+    for (let temp in dizi) {
+        console.log(temp + " ==> " + dizi[temp])
+    }
+    console.log("\n*********************")
+    //3.YOL elemanlara erişim sağlamak
+    //ES6
+    for (let temp of dizi) {
+        console.log(temp)
+    }
+    console.log("\n*********************")
+    //4.YOL elemanlara erişim sağlamak
+    //ES5
+    dizi.forEach(function (value, index, array) {
+        console.log(index+" => "+  value);
+    });
+    console.log("\n*********************")
+    //5.YOL elemanlara erişim sağlamak
+    //ES5 interpolation 
+    dizi.forEach(function (value, index, array) {
+        console.log(`${index} => ${value}`);
+    });
+
+};
+arrFunction()
