@@ -505,22 +505,22 @@
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-let usernameAndSurnameMasking2 = () => {
-    const usernameAndSurname = prompt("Adınız ve Soyadınız");
-    let username, surname;
+// let usernameAndSurnameMasking2 = () => {
+//     const usernameAndSurname = prompt("Adınız ve Soyadınız");
+//     let username, surname;
 
-    username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
-    for (let i = 1; i < username.length; i++) {
-        username = username.replace(username.charAt(i), "*");
-    }
-    console.log(username.toUpperCase());
+//     username = usernameAndSurname.substring(0, usernameAndSurname.indexOf(" "));
+//     for (let i = 1; i < username.length; i++) {
+//         username = username.replace(username.charAt(i), "*");
+//     }
+//     console.log(username.toUpperCase());
 
-    surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length);
-    for (let i = 3; i < surname.length; i++) {
-        surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
-    }
-    console.log(surname.toUpperCase());
-}
+//     surname = usernameAndSurname.substring(usernameAndSurname.indexOf(" ") + 1, usernameAndSurname.length);
+//     for (let i = 3; i < surname.length; i++) {
+//         surname = surname.toLocaleUpperCase().replace(surname.charAt(i), "*");
+//     }
+//     console.log(surname.toUpperCase());
+// }
 //usernameAndSurnameMasking2();
 
 /*
@@ -553,94 +553,94 @@ Java ile yapıldı.
 */
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // normal function 
-function normal() {
-    console.log("normal");
-}
-normal()
+// function normal() {
+//     console.log("normal");
+// }
+// normal()
 
-// anonymous function
-let anonymous = function () {
-    console.log("anonymous");
-}
-//anonymous();
+// // anonymous function
+// let anonymous = function () {
+//     console.log("anonymous");
+// }
+// //anonymous();
 
-// anonymous function
-let arrow = () => {
-    console.log("arrow");
-}
+// // anonymous function
+// let arrow = () => {
+//     console.log("arrow");
+// }
 //arrow()
 
 
 
 // setTimeOut
-setTimeout(function(){
-    alert("1.Admin Hoşgeldiniz");
-},3000);
+// setTimeout(function(){
+//     alert("1.Admin Hoşgeldiniz");
+// },3000);
 
-// setTimeOut
-setTimeout(()=>{
-    alert("2.Admin Hoşgeldiniz");
-},2000);
+// // setTimeOut
+// setTimeout(()=>{
+//     alert("2.Admin Hoşgeldiniz");
+// },2000);
 
-// setTimeOut
-let data= () => {
-    alert("3.Admin Hoşgeldiniz")
-}
-setTimeout(data(),1000);
+// // setTimeOut
+// let data= () => {
+//     alert("3.Admin Hoşgeldiniz")
+// }
+// setTimeout(data(),1000);
 
 
 // callbackfunction
-function birinci(number) {
-    console.log("birinci: " + Math.sqrt(number));
-}
+// function birinci(number) {
+//     console.log("birinci: " + Math.sqrt(number));
+// }
 
-function ikinci(callbackfn) {
-    console.log("ikinci")
-    let data = Number(prompt("Lütfen sayı giriniz"));
-    callbackfn(data)
-}
+// function ikinci(callbackfn) {
+//     console.log("ikinci")
+//     let data = Number(prompt("Lütfen sayı giriniz"));
+//     callbackfn(data)
+// }
 //ikinci(birinci);
 //Monad: bir function çıktısı başkasının girdisi ise biz buna monad diyoruz.
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // promise
-let promiseData = () => {
-    // pending : bekleme
-    // resolved: başarılı 
-    // rejected: başarısız
+// let promiseData = () => {
+//     // pending : bekleme
+//     // resolved: başarılı 
+//     // rejected: başarısız
 
-    //1.
-    // const promise1=new Promise((resolve,rejected)=>{
-    //     resolve("Merhabalar pozitif");
-    // });
-    // console.log(promise1);
+//     //1.
+//     // const promise1=new Promise((resolve,rejected)=>{
+//     //     resolve("Merhabalar pozitif");
+//     // });
+//     // console.log(promise1);
 
-    //2.
-    const promise1 = new Promise((resolve, rejected) => {
-        rejected("Merhabalar negatif");
+//     //2.
+//     const promise1 = new Promise((resolve, rejected) => {
+//         rejected("Merhabalar negatif");
 
-    });
-    console.log(promise1);
-}
+//     });
+//     console.log(promise1);
+// }
 //promiseData()
 
 
-let promiseData2 = () => {
-    //1.
-    const promise1 = new Promise((resolve, rejected) => {
-        resolve("Merhabalar pozitif");
-        rejected("Merhabalar negatif");
-    });
-    console.log(promise1);
+// let promiseData2 = () => {
+//     //1.
+//     const promise1 = new Promise((resolve, rejected) => {
+//         resolve("Merhabalar pozitif");
+//         rejected("Merhabalar negatif");
+//     });
+//     console.log(promise1);
 
-    promise1.then((temp) => {
-        console.log(temp)
-    })
-        .catch((error) => {
-            console.error("is not connected")
-        });
-}
-promiseData2()
+//     promise1.then((temp) => {
+//         console.log(temp)
+//     })
+//         .catch((error) => {
+//             console.error("is not connected")
+//         });
+// }
+// promiseData2()
 
 
 
