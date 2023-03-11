@@ -920,8 +920,3 @@ Java ile yapıldı.
 
 
 ////////////////////////////////////////////////////
-let formData = () => {
-    let data = document.getElementById("email").value;
-    //alert(data);
-    document.getElementById("parag4").innerHTML = data;
-}

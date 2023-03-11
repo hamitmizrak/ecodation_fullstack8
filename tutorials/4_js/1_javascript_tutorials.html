@@ -42,13 +42,28 @@
 
     <div class="m-4">,
         <form action="#" method="get">
-            <input type="text" id="email" class="form-control" placeholder="buraya yazınız ...">
-            <button type="submit" class="btn btn-primary mt-1 ms-3"  onclick="formData()">click Me</button>
+            <input type="email" id="email_id" class="form-control" placeholder="buraya yazınız ...">
+            <button type="submit" class="btn btn-primary mt-1 ms-3" onclick="formData()">click Me</button>
         </form>
         <p id="parag4">...</p>
-
-
     </div>
+
+    <script>
+        let formData = () => {
+            // alert("Deneme")
+            let domData, first, second;
+            domData = document.getElementById("email_id").value;
+            first = domData.substring(0, domData.indexOf("@")).toUpperCase();
+            console.log(first);
+
+            second = domData.substring(domData.indexOf("@"), domData.lenth)
+            console.log(second);
+
+            // document.getElementById("parag4").innerHTML="<i>"+ first.concat(second)+  "</i>";
+            //interpolation   
+            document.getElementById("parag4").innerHTML = `<i>${first.concat(second)}</i>`;
+        }
+    </script>
 
 
     <hr>
