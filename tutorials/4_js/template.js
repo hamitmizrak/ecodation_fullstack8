@@ -901,8 +901,14 @@ object4();
 // }
 
 let dom=()=>{
-let userData=prompt("Lütfen birşeyler yazınız");
-window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>"  ;
+//let userData=prompt("Lütfen birşeyler yazınız");
+// window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>";
+// document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
+//alert("deneme")
+//document.getElementById("paragId3").style.color="yellow";   //.innerHTML="deneme"   //.style.color="yellow";
 
-document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
+document.getElementById("paragId3").style.color="#abc123";   //.innerHTML="deneme"   //.style.color="yellow";
+document.getElementById("paragId3").style.backgroundColor="black";   //.innerHTML="deneme"   //.style.color="yellow";
+document.getElementById("paragId3").style.paddingLeft="3rem";   //.innerHTML="deneme"   //.style.color="yellow";
+
 };
