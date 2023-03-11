@@ -896,6 +896,13 @@ object4();
 //verilen bir sayının karekökünü alan yeni bir fonksiyon özelliği 
 /////////////////////////////////////////////////////////////////////////////////////
 
-let event1=()=>{
-    alert("event");
-}
+// let event1=()=>{
+//     alert("event");
+// }
+
+let dom=()=>{
+let userData=prompt("Lütfen birşeyler yazınız");
+window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>"  ;
+
+document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
+};
