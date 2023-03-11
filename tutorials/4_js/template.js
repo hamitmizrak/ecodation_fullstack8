@@ -928,36 +928,48 @@ $(document).ready(function () {
 
     //HIDE
     $("#pictureHiding").click(function () {
-        $("#imageId").hide("slow",function(){
+        $("#imageId").hide("slow", function () {
             alert("kapatıldı")
         });
     }); // end pictureHiding
 
 
-//HIDE
-$("#pictureShowing").click(function () {
-    $("#imageId").show("slow",function(){
-        alert("Gösterildi")
-    });
-}); // end pictureHiding
+    //HIDE
+    $("#pictureShowing").click(function () {
+        $("#imageId").show("slow", function () {
+            alert("Gösterildi")
+        });
+    }); // end pictureHiding
 
-//CLICK
-$("#commonId").click(function () {
-//alert("Deneme");
+    //CLICK
+    $("#commonId").click(function () {
+        //alert("Deneme");
 
-//HTML
-$("#parag_jquery_id").html("<b>Merhabalar</b>");
+        //HTML
+        $("#parag_jquery_id").html("<b>Merhabalar</b>");
 
-//CSS
-$("#parag_jquery_id").css("color", "orange").css("backgroundColor","black",);
-let object={
-    "padding":"2rem",
-    "boxShadow":"1px 1px 2px 1px rgba(0,0,0,.8)"
-};
-$("#parag_jquery_id").css(object);
+        //CSS
+        $("#parag_jquery_id").css("color", "orange").css("backgroundColor", "black",);
+        let object = {
+            "padding": "2rem",
+            "boxShadow": "1px 1px 2px 1px rgba(0,0,0,.8)"
+        };
+        $("#parag_jquery_id").css(object);
 
-//HTML
-});// end Button
+        //HTML
+    });// end Button
 
+});
+
+
+$(function () {
+    $(document).keydown(function (tus) {
+        console.log(tus.keyCode);
+        if (tus.keyCode === 13) {
+            alert("ENTER")
+        } else {
+            alert("OTHER")
+        }
+    })
 });
 
