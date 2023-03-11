@@ -921,6 +921,8 @@ Java ile yapıldı.
 
 ////////////////////////////////////////////////////
 // jQUERY
+//$("#id").fonksiyonAdi();
+
 $(document).ready(function () {
     // let picture=document.getElementById("imageId");
 
@@ -939,4 +941,18 @@ $("#pictureShowing").click(function () {
     });
 }); // end pictureHiding
 
+//CLICK
+$("#commonId").click(function () {
+//alert("Deneme");
+
+//CSS
+$("#parag_jquery_id").css("color", "orange").css("backgroundColor","black",);
+let object={
+    "padding":"2rem",
+    "boxShadow":"1px 1px 2px 1px rgba(0,0,0,.8)"
+};
+$("#parag_jquery_id").css(object);
+});// end Button
+
 });
+
