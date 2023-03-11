@@ -920,3 +920,23 @@ Java ile yapıldı.
 
 
 ////////////////////////////////////////////////////
+// jQUERY
+$(document).ready(function () {
+    // let picture=document.getElementById("imageId");
+
+    //HIDE
+    $("#pictureHiding").click(function () {
+        $("#imageId").hide("slow",function(){
+            alert("kapatıldı")
+        });
+    }); // end pictureHiding
+
+
+//HIDE
+$("#pictureShowing").click(function () {
+    $("#imageId").show("slow",function(){
+        alert("Gösterildi")
+    });
+}); // end pictureHiding
+
+});
