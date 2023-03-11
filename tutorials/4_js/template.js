@@ -945,6 +945,9 @@ $("#pictureShowing").click(function () {
 $("#commonId").click(function () {
 //alert("Deneme");
 
+//HTML
+$("#parag_jquery_id").html("<b>Merhabalar</b>");
+
 //CSS
 $("#parag_jquery_id").css("color", "orange").css("backgroundColor","black",);
 let object={
@@ -952,6 +955,8 @@ let object={
     "boxShadow":"1px 1px 2px 1px rgba(0,0,0,.8)"
 };
 $("#parag_jquery_id").css(object);
+
+//HTML
 });// end Button
 
 });
