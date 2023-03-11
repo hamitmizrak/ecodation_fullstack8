@@ -16,32 +16,44 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- <script>
+    <!-- <script>
             alert("Merhabalar");
         </script> -->
-        <script src="template.js"></script>
+    <script src="template.js"></script>
 </head>
 
 <body>
     <!-- Start Codes -->
 
-    <h1 id="h1_id2">Merhabalar</h1>
-
-    <hr>
-    <hr>
-    <br><br>
-
-
-    <!-- <div class="m-4">
-        <input type="text" id="email" class="form-control" placeholder="buraya yazınız ...">
-        <button class="btn btn-primary mt-1"  onclick="dom()">Veri Al</button>
-        <p id="parag4">...</p>
-    </div>
-   
+    <!-- <h1 id="h1_id">Merhabalar</h1>
 
     <hr>
     <hr>
     <br><br> -->
+
+
+    <!-- 
+    STEP1:  input email olan bir form ve submit button yapalım.
+    STEP2: Dom ile input verisini alalım. 
+    STEP3: kullanıcının @ işaretten öndekini kelimeyi alalım. 
+    STEP4: Bunları büyük harf yapalım.
+    STEP5: Sonra tekrar ekleyelim ve ekranda gösterlim (indexOf,substring)
+    -->
+
+    <div class="m-4">,
+        <form action="#" method="get">
+            <input type="text" id="email" class="form-control" placeholder="buraya yazınız ...">
+            <button type="submit" class="btn btn-primary mt-1 ms-3"  onclick="formData()">click Me</button>
+        </form>
+        <p id="parag4">...</p>
+
+
+    </div>
+
+
+    <hr>
+    <hr>
+    <br><br>
 
     <!-- <p id="paragId1" class="text-primary mt-5 ms-3">innerHTML</p>
     <p id="paragId2" class="text-primary mt-2 ms-3">innerText</p>
@@ -63,7 +75,7 @@
     <button class="btn btn-info mt-5 ms-3"  onmouseleave="event1()">onmouseleave</button> 
     <button class="btn btn-primary mt-5 ms-3"  onmousewheel="event1()">onmousewheel</button> 
     -->
-    
+
 
     <!-- Ends Codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

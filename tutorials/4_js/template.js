@@ -653,245 +653,245 @@ Java ile yapıldı.
 // clean code: ideal kod yazma sanatı
 // SOLID
 
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Dizi
-let arrFunction = () => {
-    let dizi = [44, "Malatya", true, "Antep", 43.34];
-    // console.log(dizi);
-    // console.log(dizi[0]);
-    // console.log(dizi[4]);
-    // console.log(dizi[dizi.length-1]);
-    // console.log(dizi.length)
+// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// // Dizi
+// let arrFunction = () => {
+//     let dizi = [44, "Malatya", true, "Antep", 43.34];
+//     // console.log(dizi);
+//     // console.log(dizi[0]);
+//     // console.log(dizi[4]);
+//     // console.log(dizi[dizi.length-1]);
+//     // console.log(dizi.length)
 
-    //1.YOL elemanlara erişim sağlamak
-    for (let i = 0; i < dizi.length; i++) {
-        console.log(dizi[i])
-    }
+//     //1.YOL elemanlara erişim sağlamak
+//     for (let i = 0; i < dizi.length; i++) {
+//         console.log(dizi[i])
+//     }
 
-    console.log("\n*********************")
-    //2.YOL elemanlara erişim sağlamak
-    //ES6
-    for (let temp in dizi) {
-        console.log(temp + " ==> " + dizi[temp])
-    }
+//     console.log("\n*********************")
+//     //2.YOL elemanlara erişim sağlamak
+//     //ES6
+//     for (let temp in dizi) {
+//         console.log(temp + " ==> " + dizi[temp])
+//     }
 
-    console.log("\n*********************")
-    //3.YOL elemanlara erişim sağlamak
-    //ES6
-    for (let temp of dizi) {
-        console.log(temp)
-    }
+//     console.log("\n*********************")
+//     //3.YOL elemanlara erişim sağlamak
+//     //ES6
+//     for (let temp of dizi) {
+//         console.log(temp)
+//     }
 
-    console.log("\n*********************")
-    //4.YOL elemanlara erişim sağlamak
-    //ES5
-    dizi.forEach(function (value, index, array) {
-        console.log(index + " => " + value);
-    });
-    console.log("\n*********************")
+//     console.log("\n*********************")
+//     //4.YOL elemanlara erişim sağlamak
+//     //ES5
+//     dizi.forEach(function (value, index, array) {
+//         console.log(index + " => " + value);
+//     });
+//     console.log("\n*********************")
 
-    //5.YOL elemanlara erişim sağlamak
-    //ES5 interpolation 
-    dizi.forEach(function (value, index, array) {
-        console.log(`${index} => ${value}`);
-    });
+//     //5.YOL elemanlara erişim sağlamak
+//     //ES5 interpolation 
+//     dizi.forEach(function (value, index, array) {
+//         console.log(`${index} => ${value}`);
+//     });
 
-};
-//arrFunction()
+// };
+// //arrFunction()
 
-//dizi oluştur ve return kullan
-const arrData = () => {
-    let dizi = [5, 2, 3, 9, 1];
-    return dizi;
-}
+// //dizi oluştur ve return kullan
+// const arrData = () => {
+//     let dizi = [5, 2, 3, 9, 1];
+//     return dizi;
+// }
 
-const arr2 = () => {
-    let dizi = arrData();
-    dizi.push("Diyarbakır"); // sona 1 eleman ekle
-    dizi.unshift("Sivas"); // başa 1 eleman ekle
+// const arr2 = () => {
+//     let dizi = arrData();
+//     dizi.push("Diyarbakır"); // sona 1 eleman ekle
+//     dizi.unshift("Sivas"); // başa 1 eleman ekle
 
-    dizi.pop();// sona 1 eleman çıkar
-    dizi.shift();// baştan 1 eleman çıkar.
+//     dizi.pop();// sona 1 eleman çıkar
+//     dizi.shift();// baştan 1 eleman çıkar.
 
-    //dizi.sort(); //küçükten büyüğe sıralamak
-    dizi.sort().reverse(); // büyükten küçüğe  sıralamak
+//     //dizi.sort(); //küçükten büyüğe sıralamak
+//     dizi.sort().reverse(); // büyükten küçüğe  sıralamak
 
-    dizi.forEach(function (value, index, array) {
-        console.log(`${index} => ${value}`);
-    });
+//     dizi.forEach(function (value, index, array) {
+//         console.log(`${index} => ${value}`);
+//     });
 
-    console.log("String'e çevir: " + dizi.toString());
-    console.log(" " + dizi.join("-"));
-}
-//arr2()
+//     console.log("String'e çevir: " + dizi.toString());
+//     console.log(" " + dizi.join("-"));
+// }
+// //arr2()
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++
-// ES5 forEach 
-const arrForEach = () => {
-    let dizi = arrData();
-    dizi.forEach((value, index, array) => {
-        console.log(`${index} => ${value}`);
-    });
-}
-//arrForEach()
+// //+++++++++++++++++++++++++++++++++++++++++++++++++
+// // ES5 forEach 
+// const arrForEach = () => {
+//     let dizi = arrData();
+//     dizi.forEach((value, index, array) => {
+//         console.log(`${index} => ${value}`);
+//     });
+// }
+// //arrForEach()
 
-//filter: istediklerimizi almak
-const arrFilter = () => {
-    let dizi = arrData();
-    let data1 = dizi.filter((value, index, array) => {
-        return value >= 5
-    }).forEach((value, index, array) => {
-        console.log(`${index} => ${value}`);
-    });
-}
-//arrFilter();
+// //filter: istediklerimizi almak
+// const arrFilter = () => {
+//     let dizi = arrData();
+//     let data1 = dizi.filter((value, index, array) => {
+//         return value >= 5
+//     }).forEach((value, index, array) => {
+//         console.log(`${index} => ${value}`);
+//     });
+// }
+// //arrFilter();
 
-//map: her bir elemana erişir.
-const arrMap = () => {
-    let dizi = arrData();
-    let data1 = dizi.map((value, index, array) => {
-        return value * 5
-    }).forEach((value, index, array) => {
-        console.log(`${index} => ${value}`);
-    });
-}
-//arrMap();
+// //map: her bir elemana erişir.
+// const arrMap = () => {
+//     let dizi = arrData();
+//     let data1 = dizi.map((value, index, array) => {
+//         return value * 5
+//     }).forEach((value, index, array) => {
+//         console.log(`${index} => ${value}`);
+//     });
+// }
+// //arrMap();
 
-/* 
-DİKKAT:
-DRY:Kendini tekrarlama 
-KISS: her zamana en kısa yolda çözüme git 
-YAGNI: Gereksizlikten uzak dur . 
-Dummy code: interface kullanmadığın gövdesiz metot kullanma 
-clean code: ideal kod yazma sanatı
-*/
-//array ==> forEach(ES5), filter(ES5), interpolation(ES6)
-//1-) 6 tane dizi elemanı olan ve bunlara random sayılar atayıp bu sonucu bir dizide functionda gösterelim(fonksiyon adı: randomArray)
-let randomArray = () => {
-    let arr = [];
-    for (let i = 0; i < 6; i++) {
-        arr[i] = Math.round(Math.random() * 9 + 1);
-    }
-    //console.log(arr)
-    return arr;
-}
-//randomArray()
+// /* 
+// DİKKAT:
+// DRY:Kendini tekrarlama 
+// KISS: her zamana en kısa yolda çözüme git 
+// YAGNI: Gereksizlikten uzak dur . 
+// Dummy code: interface kullanmadığın gövdesiz metot kullanma 
+// clean code: ideal kod yazma sanatı
+// */
+// //array ==> forEach(ES5), filter(ES5), interpolation(ES6)
+// //1-) 6 tane dizi elemanı olan ve bunlara random sayılar atayıp bu sonucu bir dizide functionda gösterelim(fonksiyon adı: randomArray)
+// let randomArray = () => {
+//     let arr = [];
+//     for (let i = 0; i < 6; i++) {
+//         arr[i] = Math.round(Math.random() * 9 + 1);
+//     }
+//     //console.log(arr)
+//     return arr;
+// }
+// //randomArray()
 
-//2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
-let randomForEach = () => {
-    let arr = randomArray().forEach((value) => {
-        console.log(`${value}`);
-    });
+// //2-) bu randomArray() forEach ile console.log ile interpolation olarak gösterelim. (tips: forEach())
+// let randomForEach = () => {
+//     let arr = randomArray().forEach((value) => {
+//         console.log(`${value}`);
+//     });
 
-}
-//randomForEach()
+// }
+// //randomForEach()
 
-// 3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
-// 4-) bu elde ettiğimiz çift sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
-// 5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
-// 6-) bu çift sayıların her birinin karesini alalım ve diziye verelim.. (tips:Math.pow(sayı,2) dizi.map())
+// // 3-) bu dizilerdeki elemanlardan çift olanları ekranda gösterelim (tips: filter())
+// // 4-) bu elde ettiğimiz çift sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
+// // 5-) bu çift sayıların toplamı ve kaçtane olduğunu gösterelim.
+// // 6-) bu çift sayıların her birinin karesini alalım ve diziye verelim.. (tips:Math.pow(sayı,2) dizi.map())
 
-let randomFilter = () => {
-    let counter = 0, sum = 0;
+// let randomFilter = () => {
+//     let counter = 0, sum = 0;
 
-    let arr = randomArray().filter((value) => {
-        return value % 2 == 0
-    });
-    arr.sort();
-    console.log(arr);
+//     let arr = randomArray().filter((value) => {
+//         return value % 2 == 0
+//     });
+//     arr.sort();
+//     console.log(arr);
 
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-        counter++;
-    }
-    console.log("Toplamı: " + sum);
-    console.log("adeti: " + counter);
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//         counter++;
+//     }
+//     console.log("Toplamı: " + sum);
+//     console.log("adeti: " + counter);
 
-    let arr2 = arr.map((value) => {
-        return Math.pow(value, 2);
-    })
-    console.log("karesi:" + arr2);
-}
-//randomFilter()
-/*
-7-) bu elde ettiğimiz tek sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
-8-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
-9-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
-*/
+//     let arr2 = arr.map((value) => {
+//         return Math.pow(value, 2);
+//     })
+//     console.log("karesi:" + arr2);
+// }
+// //randomFilter()
+// /*
+// 7-) bu elde ettiğimiz tek sayıları başka bir dizide küçükten büyüğe doğru gösterelim.(tips: dizi.sort())
+// 8-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
+// 9-) bu tek sayıların toplamı ve kaçtane olduğunu gösterelim.
+// */
 
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//OBJECT
-let object = () => {
+// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// //OBJECT
+// let object = () => {
 
-    let computer = {
-        name: "msi gl65",
-        trade: "msi",
-        'price': 12000,
-        hight: true,
-        information: function () {
-            return "mainboard: SteelSeries".concat("Ram 32")
-        },
-        ramComputerDevice: {
-            name: "msi 78Xl",
-            price: 4000
-        },
-        dizi: [44, 34, 55, 12, 25]
-    };
-    console.log(computer)
-    console.log(computer.name)
-    console.log(computer.trade)
-    console.log(computer.price)
-    console.log(computer.hight)
-    console.log(typeof computer.hight)
-    console.log(computer.information())
-    console.log(computer.ramComputerDevice.price);
+//     let computer = {
+//         name: "msi gl65",
+//         trade: "msi",
+//         'price': 12000,
+//         hight: true,
+//         information: function () {
+//             return "mainboard: SteelSeries".concat("Ram 32")
+//         },
+//         ramComputerDevice: {
+//             name: "msi 78Xl",
+//             price: 4000
+//         },
+//         dizi: [44, 34, 55, 12, 25]
+//     };
+//     console.log(computer)
+//     console.log(computer.name)
+//     console.log(computer.trade)
+//     console.log(computer.price)
+//     console.log(computer.hight)
+//     console.log(typeof computer.hight)
+//     console.log(computer.information())
+//     console.log(computer.ramComputerDevice.price);
 
-    computer.year = "2023";
-    console.log(computer.year)
+//     computer.year = "2023";
+//     console.log(computer.year)
 
-    console.log(computer.dizi)
-    console.log(computer.dizi[0]);
+//     console.log(computer.dizi)
+//     console.log(computer.dizi[0]);
 
-    console.log(computer.ramComputerDevice.name);
-    console.log(computer["ramComputerDevice"]["name"]); //nested object variable
+//     console.log(computer.ramComputerDevice.name);
+//     console.log(computer["ramComputerDevice"]["name"]); //nested object variable
 
-}
-//object()
-
-
-let object2 = () => {
-    let Person = function (name, surname) {
-        this.name = name;
-        this.surname = surname;
-        console.log(this)
-    }
-
-    let result = new Person("adı", "soyadı");
-    //console.log(result);
-    console.log(result.hasOwnProperty("name"));
-
-}
-//object2();
+// }
+// //object()
 
 
-//built in constructor: kendi fonksiyonumuzu eklemek
-let object3 = () => {
-    String.prototype.tekrar = function (data) {
-        return new Array(data + 1).join(this);
-    }
+// let object2 = () => {
+//     let Person = function (name, surname) {
+//         this.name = name;
+//         this.surname = surname;
+//         console.log(this)
+//     }
 
-    console.log("java".tekrar(2))
-}
-object3();
+//     let result = new Person("adı", "soyadı");
+//     //console.log(result);
+//     console.log(result.hasOwnProperty("name"));
 
-//verilen bir sayının karesini alan yeni bir fonksiyon özelliği 
-let object4 = () => {
-    String.prototype.karesi = function (data) {
-        return Math.pow(data, 2);
-    }
-    console.log("".karesi(5))
-}
-object4();
+// }
+// //object2();
+
+
+// //built in constructor: kendi fonksiyonumuzu eklemek
+// let object3 = () => {
+//     String.prototype.tekrar = function (data) {
+//         return new Array(data + 1).join(this);
+//     }
+
+//     console.log("java".tekrar(2))
+// }
+// object3();
+
+// //verilen bir sayının karesini alan yeni bir fonksiyon özelliği 
+// let object4 = () => {
+//     String.prototype.karesi = function (data) {
+//         return Math.pow(data, 2);
+//     }
+//     console.log("".karesi(5))
+// }
+// //object4();
 
 //verilen bir sayının karekökünü alan yeni bir fonksiyon özelliği 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -900,20 +900,28 @@ object4();
 //     alert("event");
 // }
 
-let dom = () => {
-    // let userData=prompt("Lütfen birşeyler yazınız");
-    // window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>";
-    // document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
-    // alert("deneme")
-    // document.getElementById("paragId3").style.color="yellow";   //.innerHTML="deneme"   //.style.color="yellow";
+// let dom = () => {
+//     // let userData=prompt("Lütfen birşeyler yazınız");
+//     // window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>";
+//     // document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
+//      alert("deneme")
+//     // document.getElementById("paragId3").style.color="yellow";   //.innerHTML="deneme"   //.style.color="yellow";
 
-    document.getElementById("paragId3").style.color = "yellow";   //.innerHTML="deneme"   //.style.color="yellow";
-    document.getElementById("paragId3").style.backgroundColor = "black";   //.innerHTML="deneme"   //.style.color="yellow";
-    document.getElementById("paragId3").style.paddingLeft = "3rem";   //.innerHTML="deneme"   //.style.color="yellow";
-};
+//     document.getElementById("paragId3").style.color = "yellow";   //.innerHTML="deneme"   //.style.color="yellow";
+//     document.getElementById("paragId3").style.backgroundColor = "black";   //.innerHTML="deneme"   //.style.color="yellow";
+//     document.getElementById("paragId3").style.paddingLeft = "3rem";   //.innerHTML="deneme"   //.style.color="yellow";
+// };
 
-//Listener
-//let listenerData=document.getElementById("h1_id").addEventListener();
-//olayTürü,Function
-let listenerData = document.getElementById("h1_id");
-let eventListerner=listenerData.addEventListener("click", (e)=> {console.log("Tıklandı")},false);
+// //Listener
+// //let listenerData=document.getElementById("h1_id").addEventListener();
+// //olayTürü,Function
+// let listenerData = document.getElementById("h1_id");
+// let eventListerner=listenerData.addEventListener("click", (e)=> {console.log("Tıklandı")},false);
+
+
+////////////////////////////////////////////////////
+let formData = () => {
+    let data = document.getElementById("email").value;
+    //alert(data);
+    document.getElementById("parag4").innerHTML = data;
+}
