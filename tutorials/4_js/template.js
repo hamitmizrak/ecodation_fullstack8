@@ -900,15 +900,20 @@ object4();
 //     alert("event");
 // }
 
-let dom=()=>{
-//let userData=prompt("Lütfen birşeyler yazınız");
-// window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>";
-// document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
-//alert("deneme")
-//document.getElementById("paragId3").style.color="yellow";   //.innerHTML="deneme"   //.style.color="yellow";
+let dom = () => {
+    // let userData=prompt("Lütfen birşeyler yazınız");
+    // window.document.getElementById("paragId1").innerHTML="<b>"+userData+"</b>";
+    // document.getElementById("paragId2").innerText="<b>"+prompt("Lütfen birşeyler yazınız")+"</b>"    ;
+    // alert("deneme")
+    // document.getElementById("paragId3").style.color="yellow";   //.innerHTML="deneme"   //.style.color="yellow";
 
-document.getElementById("paragId3").style.color="#abc123";   //.innerHTML="deneme"   //.style.color="yellow";
-document.getElementById("paragId3").style.backgroundColor="black";   //.innerHTML="deneme"   //.style.color="yellow";
-document.getElementById("paragId3").style.paddingLeft="3rem";   //.innerHTML="deneme"   //.style.color="yellow";
-
+    document.getElementById("paragId3").style.color = "yellow";   //.innerHTML="deneme"   //.style.color="yellow";
+    document.getElementById("paragId3").style.backgroundColor = "black";   //.innerHTML="deneme"   //.style.color="yellow";
+    document.getElementById("paragId3").style.paddingLeft = "3rem";   //.innerHTML="deneme"   //.style.color="yellow";
 };
+
+//Listener
+//let listenerData=document.getElementById("h1_id").addEventListener();
+//olayTürü,Function
+let listenerData = document.getElementById("h1_id");
+let eventListerner=listenerData.addEventListener("click", (e)=> {console.log("Tıklandı")},false);
