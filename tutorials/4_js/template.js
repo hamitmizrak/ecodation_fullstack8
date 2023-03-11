@@ -895,3 +895,7 @@ object4();
 
 //verilen bir sayının karekökünü alan yeni bir fonksiyon özelliği 
 /////////////////////////////////////////////////////////////////////////////////////
+
+let event1=()=>{
+    alert("event");
+}
