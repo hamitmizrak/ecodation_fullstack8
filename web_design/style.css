@@ -1,1 +1,118 @@
-/* font-family: 'Barlow', sans-serif; */
+
+/*
+Project made date: Sunday March 12
+-name: Portfolio
+-author: Design and coding: Hamit Mızrak
+-version: v.1
+-description: this is project portfolio business web design. 
+*/
+
+:root {
+    --template-bg: #012 !important;
+    --template-color: #f2f2f2 !important;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --max-width: 100%;
+}
+
+/*--------------------------Common Property-------------------------------------- */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 2s all;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Barlow', sans-serif; 
+    font-size: 1.2rem;
+    background-color: var(--template-bg);
+    color: var(--template-color);
+    line-height: 1.8;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    color: #727272;
+    font-weight: 400;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    margin:.4rem 0.5rem;
+    text-align: justify;
+} 
+
+i{
+    font-size: 1.5rem;
+    opacity: .9;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+img:hover{
+    cursor: pointer;
+    box-shadow:1px 1px 5px 1px rgba(0,0,0,.8) ;
+}
+
+/*--------------------------Line Clamp-------------------------------------- */
+.line-clamp4{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp6{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+
+.line-clamp8{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+
+.line-clamp10{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
