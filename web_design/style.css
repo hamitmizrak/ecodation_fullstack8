@@ -125,23 +125,30 @@ img:hover {
     max-width: 100% !important;
 }
 
-#navbar_first ul li,
-p {
+#navbar_first span{
+    color:white!important;
+}
+
+#navbar_first i{
+margin-right:3rem;
+}
+
+#navbar_first ul li,span {
     display: inline;
 }
 
-#navbar_first i,
-p {
-    font-size: .8rem;
+#navbar_first i,span {
+    font-size: 1rem;
+   
 }
 
 #navbar_first i {
-    color: #e83e8c;
+    color: #ffffff;
     margin-right: 0.01rem;
 }
 
 #navbar_first .first_right a {
-    padding: 0.1rem;
+    padding: 0.4rem;
 }
 
 .first_left {
@@ -153,8 +160,8 @@ p {
 }
 
 .first_right>ul>li>a {
-    color: white;
-    background-color: #101111;
+    color: rgb(172, 7, 248);
+    background-color: #26083f;
     border-radius: 10%;
     padding: .6rem !important;
     margin-top: 1rem !important;
@@ -173,7 +180,6 @@ p {
 .top_bar ul li i {
     color: white;
 }
-
 
 /* dark */
 .dark_mode_css {
