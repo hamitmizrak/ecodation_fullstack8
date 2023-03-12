@@ -39,7 +39,6 @@ Project made date: Sunday March 12
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    /* transition: 2s all; */
 }
 
 html {
@@ -119,6 +118,9 @@ img:hover{
 }
 
 /*--------------------------Navbar First-------------------------------------- */
+#navbar_first{
+    max-height: 3rem;
+}
 #navbar_first ul li, p{
     display: inline;
 }
@@ -144,11 +146,18 @@ float: left;
     float: right;
 }
 
-.first_right > a{
+.first_right >ul>li> a{
     color:white;
-    background-color: #343a40;
+    background-color: #101111;
     border-radius: 10%;
-    padding:5rem;
+    padding:.6rem!important;
+    margin-top:1rem!important;
+    transition: 2s all;
+}
+
+.first_right >ul>li> a:hover{
+    color:#101111;
+    background-color:white ;
 }
 
 .top_bar{
