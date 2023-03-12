@@ -8,7 +8,7 @@ Project made date: Sunday March 12
 */
 
 :root {
-    --template-bg: #012 !important;
+    --template-bg: #f9ecec !important;
     --template-color: #f2f2f2 !important;
     --blue: #007bff;
     --indigo: #6610f2;
@@ -39,7 +39,7 @@ Project made date: Sunday March 12
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    transition: 2s all;
+    /* transition: 2s all; */
 }
 
 html {
@@ -116,4 +116,58 @@ img:hover{
     overflow: hidden;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
+}
+
+/*--------------------------Navbar First-------------------------------------- */
+#navbar_first ul li, p{
+    display: inline;
+}
+
+#navbar_first i,p {
+font-size: .8rem;
+}
+
+#navbar_first i{
+    color:#e83e8c;
+    margin-right: 0.01rem;
+}
+
+#navbar_first .first_right a{
+padding: 0.1rem;
+}
+
+.first_left{
+float: left;
+}
+
+.first_right{
+    float: right;
+}
+
+.first_right > a{
+    color:white;
+    background-color: #343a40;
+    border-radius: 10%;
+    padding:5rem;
+}
+
+.top_bar{
+    background-color:#0c79ee;
+}
+
+.top_bar ul li i,p{
+   color:white!important; 
+}
+
+
+/*--------------------------Navbar Second-------------------------------------- */
+#navbar_second{
+    position: sticky;
+    top:.1px;
+}
+
+
+#logo{
+    border-radius: 50% 50%;
+    width: 5rem;
 }
