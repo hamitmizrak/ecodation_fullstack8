@@ -67,58 +67,103 @@
     </noscript>
 
     <!-- start first navbar -->
-    <nav id="navbar_first"> 
-         <!-- div.top_bar>div.container>div.row>(div.col-lg-7.col-md-9.col-xs-12>ul.clearfix.links>(li>i)*3)+(div.col-lg-5.col-md-3.col-xs-12>div.first_right>a{Login}+a{Register}) -->
+    <nav id="navbar_first">
+        <!-- div.top_bar>div.container>div.row>(div.col-lg-7.col-md-9.col-xs-12>ul.clearfix.links>(li>i)*3)+(div.col-lg-5.col-md-3.col-xs-12>div.first_right>a{Login}+a{Register}) -->
         <div class="top_bar">
             <div class="container ">
                 <div class="row">
                     <div class="col-lg-7 col-md-9 col-xs-12 ">
                         <ul class="first_left">
                             <li>
-                                <i class="fa-solid fa-phone-volume"></i><p>1-800-555-1234</p> 
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>1-800-555-1234</p>
                             </li>
 
                             <li>
-                               <i class="fa-solid fa-truck-fast"></i><p>info@example.com</p> 
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <p>info@example.com</p>
                             </li>
 
                             <li>
-                                <i class="fa-regular fa-id-card"></i> <p> Turkey Blvd, Los Angeles, US</p>
+                                <i class="fa-regular fa-id-card"></i>
+                                <p> Turkey Blvd, Los Angeles, US</p>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-5 col-md-3 col-xs-12">
                         <div class="first_right">
                             <ul>
-                                <li><a href="#" ><i class="fa-solid fa-right-to-bracket"></i></a></li>
-                                <li><a href="#" ><i class="fa-solid fa-user-secret"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#login_id"><i
+                                            class="fa-solid fa-right-to-bracket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#register_id"><i
+                                            class="fa-solid fa-user-secret"></i></a></li>
                                 <li><a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
                             </ul>
-                            
-                            
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="login_id" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="register_id" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end navbar -->
 
     <!-- start second navbar -->
-    <nav id="navbar_second" class="navbar navbar-expand-md navbar-dark bg-dark" >
-          <div class="container">
+    <nav id="navbar_second" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/header2.jpg" id="logo"  alt="isn't showing logo"  loading="lazy">
+                <img src="images/header2.jpg" id="logo" alt="isn't showing logo" loading="lazy">
             </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -130,7 +175,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Common</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Common</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Ability</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -142,62 +188,18 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-      </div>
+        </div>
     </nav>
-    
+
+
     <!-- end navbar -->
 
-     <!-- start header -->
+    <!-- start header -->
     <header></header>
     <!-- end header -->
 
     <!-- start main -->
     <main>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, tempora earum, aperiam ducimus minus impedit sed quos quae fugiat dignissimos esse obcaecati illum temporibus quaerat aliquid, perspiciatis est architecto corporis.
-        Aliquid quo fugit, alias beatae facere, dolores voluptatem nobis voluptate iure maiores eos, corporis facilis eaque. Sunt expedita magnam vel facilis perspiciatis ut perferendis reprehenderit alias, odit minus amet natus?
-        Doloribus culpa minus eius temporibus provident consectetur repellat voluptatem atque accusantium doloremque, quidem ipsa vel reprehenderit porro nostrum blanditiis optio laborum. Optio impedit voluptate ipsa laboriosam deserunt provident molestias similique?
-        Saepe minus repudiandae in nam facilis consectetur iusto nostrum quibusdam voluptates error officiis tenetur et accusamus, ad laboriosam cupiditate culpa, accusantium sunt minima distinctio odit ut. Facilis reprehenderit harum dolorem?
-        Nemo at necessitatibus, minima voluptatibus maiores quisquam quia quis consequatur repellendus ea beatae debitis et ipsam iusto pariatur doloremque quas error! Quod maiores veritatis cum laudantium, quia consequuntur officiis eaque!
-        Culpa neque ex, impedit dolorem tempora, facere autem explicabo provident pariatur praesentium quia maxime iste, eos soluta. Cupiditate molestiae animi nostrum expedita amet ducimus, non sint provident labore ut delectus!
-        Perspiciatis vitae officia quos aperiam et blanditiis aliquam tempora reiciendis. Distinctio autem, quisquam ea deleniti ut quis harum quasi placeat aut nemo quidem repellendus odio fuga ex nesciunt. Doloremque, impedit?
-        Ullam dolore quisquam natus perferendis repellendus, accusantium at officia saepe, atque ad placeat? Error facere dolorem exercitationem et a modi qui vel, odio dignissimos maxime dolore perspiciatis amet ex magnam!
-        Rem amet minima at? Nulla, velit earum. Maiores nostrum doloribus modi ex. Pariatur quod natus minima assumenda ad animi, ut ab repellat corporis voluptates vitae blanditiis molestiae officia velit atque.
-        Necessitatibus atque voluptas natus? Corrupti officia, repudiandae ipsa neque consequuntur tempore magni eaque, ipsam voluptatem unde, quo accusantium reprehenderit nobis. Odit dolore enim ab nobis. Eos quae nemo nulla accusantium?
-        Ipsum unde praesentium excepturi. Aliquam quasi dolore non cupiditate! Corporis officiis ea, adipisci laboriosam exercitationem odio aspernatur voluptates quos illo accusamus. Accusamus sed ut hic aliquid error voluptas saepe illo.
-        Harum ab sed error illum quam, corrupti quia dolore! Ipsa officiis modi sint nulla dolore eaque quasi dolores molestias excepturi tenetur dolorem suscipit, reprehenderit dolorum eius voluptatem iste eveniet autem.
-        Quod explicabo et suscipit cupiditate dolore dolores quisquam ratione iste deleniti, a autem aliquid, itaque repellat tenetur, consequuntur quo provident recusandae? Perferendis vero dolor beatae ullam perspiciatis officia, consectetur expedita.
-        Quaerat veritatis nostrum inventore libero quo fuga voluptatibus deleniti odit ea quam minus quod, dicta laborum amet delectus cumque sunt nesciunt dolorem vel exercitationem quos eaque ducimus. Quidem, veritatis labore?
-        Atque inventore, fugit pariatur doloribus commodi adipisci laborum, quidem facere ad deserunt hic, saepe perspiciatis molestias perferendis quo provident labore eos rem veritatis unde dolore aliquam. Ad molestias ex rem!
-        Magni, iusto incidunt ex inventore cupiditate et mollitia? Voluptatem veritatis ullam sed, officiis assumenda corrupti iure ex, ducimus mollitia id unde voluptatum molestiae, eos accusantium tenetur est officia? Vero, eaque!
-        Sed, fuga alias veniam, adipisci laudantium impedit hic itaque inventore tempore, porro quis ipsa vel consectetur explicabo similique? Enim rerum cupiditate accusantium temporibus quis nobis eaque vel, voluptatibus ratione atque!
-        Distinctio optio, neque, nemo expedita ratione consequuntur tempore accusantium similique voluptatibus perferendis dignissimos maiores blanditiis, aperiam amet nesciunt eos quia laboriosam est eum vel voluptatum temporibus obcaecati nam veniam! Aliquid?
-        Totam, magni, impedit a ea similique temporibus hic quaerat eaque ipsum, iure velit? Eum, ab. Aliquid at ex nobis nisi est minus repudiandae, distinctio beatae deleniti in alias recusandae ab!
-        Odit libero ducimus tempora distinctio fugit doloremque hic, quae repudiandae optio vel vitae laborum a quasi necessitatibus deserunt iste nostrum explicabo magnam sed. Reiciendis, quaerat corrupti nam voluptatibus accusantium odio?
-        Tempora nihil eum nobis laboriosam molestias autem quos neque tempore dignissimos ad illum architecto accusantium, a, reprehenderit possimus delectus dicta debitis placeat? Maiores nisi fugiat similique sint, rem iste laudantium.
-        Molestias maiores dicta consequuntur earum veritatis amet eum reiciendis suscipit cupiditate fugit explicabo, voluptatem, voluptatum repellendus, odio commodi expedita saepe ab optio! Itaque minus rem veritatis iure vero saepe inventore.
-        Porro eaque iusto quas, mollitia voluptate quidem rem odio asperiores. Id est labore aut, sit officiis natus in minus hic, aspernatur nulla nisi reprehenderit non accusamus! Nisi natus tempora temporibus.
-        Quia odio vitae sed earum aperiam dignissimos facilis quibusdam reiciendis maxime consectetur ab eaque cumque omnis, architecto modi tenetur, asperiores expedita quo? Voluptatum quis perspiciatis nobis molestias quos, explicabo aut?
-        Distinctio, quibusdam cum animi nam dolores accusantium impedit error nihil quas reprehenderit iusto, corrupti, aliquid inventore velit consectetur! Error tempore rem est voluptatum quibusdam optio repudiandae odit minus laboriosam cum.
-        Praesentium laudantium fugit quibusdam officiis obcaecati, libero voluptate amet nemo, minus saepe, exercitationem fuga tenetur sapiente explicabo aliquam numquam. In cupiditate assumenda debitis sint eveniet perspiciatis omnis suscipit pariatur ad.
-        Eaque hic consequatur magnam nostrum accusamus harum maiores, illo dignissimos earum perferendis nemo sequi quo ducimus iure, inventore odit a, eligendi dolor dicta ratione! Repellendus vero officiis accusantium commodi delectus?
-        Error, itaque quaerat. Sint accusantium quam recusandae rerum veniam perferendis molestiae perspiciatis, ratione, eaque delectus quod voluptate error harum facilis id animi officia consectetur illo. Temporibus iste sequi laboriosam harum.
-        Nesciunt, esse? Distinctio ea, voluptas delectus molestiae iure incidunt quod fuga ipsa voluptate nesciunt reprehenderit tempora in culpa similique nulla nam aspernatur debitis beatae vitae voluptatem labore necessitatibus maiores accusantium!
-        Nesciunt quam harum facilis perferendis animi id? Itaque eligendi voluptates rem ex illo labore facilis iusto vitae commodi deleniti impedit, voluptatem similique a delectus ea, soluta velit nisi quasi doloribus?
-        Minima ducimus incidunt ea exercitationem quibusdam quos. Laboriosam esse accusamus asperiores? Explicabo molestiae laborum iure, animi nobis cupiditate pariatur, at laudantium perferendis modi libero laboriosam ex ducimus reiciendis debitis dolores?
-        Incidunt laudantium ipsum qui illo nobis neque necessitatibus voluptatibus ipsa, voluptatem debitis ducimus ea beatae illum tenetur pariatur modi quis aliquid corporis tempore magni quaerat? Voluptatem accusamus nesciunt perspiciatis libero?
-        Tenetur similique id consequatur possimus suscipit, nemo eaque culpa voluptatibus commodi, reprehenderit quidem soluta veritatis quasi nostrum modi quo cumque. Esse cumque aliquam unde rerum delectus aspernatur sapiente consequuntur nisi!
-        Odit eius doloribus animi minima facilis voluptatem optio totam, maiores, inventore, modi accusamus aperiam quam facere aliquam. Omnis a ipsam, perferendis quia aliquid excepturi, doloribus pariatur possimus quas, officiis soluta.
-        Quis ea alias animi hic cupiditate? Commodi voluptas, minus consectetur aperiam blanditiis, sequi fuga alias modi deserunt debitis, tempore nemo totam magnam recusandae. Voluptates laboriosam totam in, temporibus cupiditate enim.
-        Ratione, veniam voluptatum. Numquam fuga, magni dolorum totam id vitae nihil! Rem recusandae nobis facilis consectetur delectus doloribus voluptatum, in soluta. Repellendus accusamus officiis itaque deserunt reprehenderit, accusantium laboriosam similique?
-        Sunt, ab. Quae minus, eaque est obcaecati numquam velit. Sapiente est incidunt eligendi inventore earum modi, quos neque in quis velit obcaecati molestias saepe voluptatem, ad perferendis. Laborum, at voluptas!
-        Eos, veniam totam similique assumenda quam odio accusantium eveniet natus dicta, asperiores, labore tenetur impedit ducimus consequatur ipsa est nostrum mollitia. Excepturi deserunt in natus error doloremque dolor velit possimus.
-        Doloribus porro atque cumque quasi distinctio veniam minus quam at possimus iusto! Id repellat nobis, aliquid hic vitae itaque eaque quod maxime quam in sapiente, maiores voluptate accusantium corrupti officia?
-        Ratione autem quam nisi atque deleniti odio doloremque vel quaerat adipisci, porro beatae distinctio quis. Perspiciatis alias, ducimus, recusandae sequi a sunt ullam consequatur, iure illo delectus laborum molestias animi?
-        Temporibus vero odit porro eum sunt iure dicta, architecto tenetur. Nobis saepe illum, labore, dolorum magni modi optio nihil aperiam laboriosam ex dolores sit dolore, quae eos illo quo! Omnis?
-        Rerum inventore veritatis culpa dolor quod possimus omnis doloremque libero quasi voluptatum reiciendis maxime quo nam totam earum id atque ut, exercitationem eius beatae consequuntur corporis quaerat! Iste, tenetur sit.
-        Laborum, ex molestiae voluptatibus adipisci corrupti tempora sequi voluptas, similique ducimus, id accusantium dolorum quas optio dolor nisi dolores quae corporis! Quae sequi atque hic, animi ad dolore quasi! Architecto.
-        Sit ullam hic earum excepturi dignissimos eaque voluptate, beatae a fuga dicta rem voluptatibus veniam cumque provident impedit in nisi numquam animi, nulla, velit laborum obcaecati facilis. Ex, laboriosam quibusdam.
-        Nihil cupiditate quaerat, quam reiciendis vero expedita accusantium quasi molestiae explicabo molestias reprehenderit. Fuga asperiores corporis dolorem excepturi commodi beatae quod, fugit quibusdam ad nemo voluptatem tempora similique mollitia ex.</p>
     </main>
     <!-- end main -->
 

@@ -8,8 +8,8 @@ Project made date: Sunday March 12
 */
 
 :root {
-    --template-bg: #f9ecec !important;
-    --template-color: #f2f2f2 !important;
+    --template-bg: #f9ecec;
+    --template-color: #201f1f;
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
