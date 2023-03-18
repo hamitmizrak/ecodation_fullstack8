@@ -53,16 +53,6 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-    </script>
-
 </head>
 
 <!-- Template: http://preview.themeforest.net/item/brittville-real-estate-html-website-template/full_screen_preview/21989882?_ga=2.66941866.56560517.1678623768-824740461.1678623768&_gac=1.213715488.1678623768.EAIaIQobChMIq6-H6bDW_QIVkrHVCh2YYgDQEAAYASAAEgKUavD_BwE -->
@@ -288,20 +278,20 @@
                 <h2 class="text-center text-uppercase display-3 mb-5">Projelerimiz</h2>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-3 col-xl-4 text-center animate__animated animate__bounceIn" >
+                        <div class="col-12 col-md-3 col-xl-4 mb-5 text-center animate__animated animate__bounceIn" >
                             <i class="fa-regular fa-clock"></i>
                             <p class="text-center">Çalışma Saati</p>
                             +<span class="counter">650</span>
                         </div>
 
-                        <div class="col-12 col-md-3 col-xl-4 text-center animate__animated animate__bounceIn" >
-                            <i class="fa-solid fa-diagram-project"></i>
-                            <p class="text-center">Projeler</p>
+                        <div class="col-12 col-md-3 col-xl-4 mb-5 text-center animate__animated animate__bounceIn" >
+                            <i class="fa-solid fa-diagram-project text-warning"></i>
+                            <p class="text-center ">Projeler</p>
                             +<span class="counter">25</span>
                         </div>
 
-                        <div class="col-12 col-md-3 col-xl-4 text-center animate__animated animate__bounceIn" >
-                            <i class="fa-solid fa-people-arrows"></i> 
+                        <div class="col-12 col-md-3 col-xl-4 mb-5 text-center animate__animated animate__bounceIn" >
+                            <i class="fa-solid fa-people-arrows text-info"></i> 
                             <p class="text-center">Customer</p>
                             +<span class="counter">1,234,567</span>
                         </div>
@@ -372,6 +362,14 @@
     <!-- end codes -->
 
     <!-- counter -->
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 5000
+            });
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 

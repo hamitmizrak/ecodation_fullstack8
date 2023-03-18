@@ -216,7 +216,7 @@ header{
 
 
 /*--------------------------Main-------------------------------------- */
-/* our_work */
+/*########### our_work ########### */
 #our_work{
     margin-bottom: 3rem;
     margin-top:3rem;
@@ -226,10 +226,12 @@ header{
     font-size: 4rem;
 }
 
-/* counter_work */
+/*########### counter_work ###########*/
 #counter_work {
     background-color: #0c79ee;
     color:white;
+    margin-top:3rem;
+    padding:8rem;
 }
 
 #counter_work i{
