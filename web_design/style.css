@@ -205,13 +205,12 @@ margin-right:3rem;
 
 /*--------------------------Header-------------------------------------- */
 header{
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index:-1;
+
+    z-index:1;
 }
 
 .carousel-item{
-   height: 60vh;
+   height: 50rem;
 }
 
 
