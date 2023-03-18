@@ -20,7 +20,7 @@
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
-    
+
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
@@ -53,6 +53,16 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
 </head>
 
 <!-- Template: http://preview.themeforest.net/item/brittville-real-estate-html-website-template/full_screen_preview/21989882?_ga=2.66941866.56560517.1678623768-824740461.1678623768&_gac=1.213715488.1678623768.EAIaIQobChMIq6-H6bDW_QIVkrHVCh2YYgDQEAAYASAAEgKUavD_BwE -->
@@ -223,6 +233,8 @@
 
     <!-- start main -->
     <main>
+
+        <!-- start our_work  -->
         <section id="our_work">
             <!-- div>h2.text-center.text-uppercase.display-3{Çalışmalarımız}+div.container>div.row>div.col-12.col-md-3.col-xl-4.text-center>i+h4{Eticaret}+p{lorem}+button.btn.btn-primary{less more...} -->
             <div>
@@ -268,6 +280,37 @@
                 </div>
             </div>
         </section>
+        <!-- end our_work  -->
+
+        <!-- start counter_work  -->
+        <section id="counter_work">
+            <div>
+                <h2 class="text-center text-uppercase display-3 mb-5">Projelerimiz</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-xl-4 text-center animate__animated animate__bounceIn" >
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="text-center">Çalışma Saati</p>
+                            +<span class="counter">650</span>
+                        </div>
+
+                        <div class="col-12 col-md-3 col-xl-4 text-center animate__animated animate__bounceIn" >
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <p class="text-center">Projeler</p>
+                            +<span class="counter">25</span>
+                        </div>
+
+                        <div class="col-12 col-md-3 col-xl-4 text-center animate__animated animate__bounceIn" >
+                            <i class="fa-solid fa-people-arrows"></i> 
+                            <p class="text-center">Customer</p>
+                            +<span class="counter">1,234,567</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end our_work  -->
+
     </main>
     <!-- end main -->
 
@@ -327,9 +370,11 @@
     <!-- end footer -->
 
     <!-- end codes -->
+
     <!-- counter -->
-    <script src="./experiences/waypoints/waypoints.min.js"></script>
-    <script src="./experiences/counterup/counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
 
     <!-- body end -->
     <!-- Bootstrap JavaScript Libraries -->

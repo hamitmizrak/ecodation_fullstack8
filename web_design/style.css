@@ -194,6 +194,7 @@ margin-right:3rem;
     position: sticky;
     top: 0;
     z-index: 1;
+  
 }
 
 #logo {
@@ -215,13 +216,28 @@ header{
 
 
 /*--------------------------Main-------------------------------------- */
+/* our_work */
 #our_work{
     margin-bottom: 3rem;
-    margin-top:3rem
+    margin-top:3rem;
 }
 
 #our_work i{
     font-size: 4rem;
+}
+
+/* counter_work */
+#counter_work {
+    background-color: #0c79ee;
+    color:white;
+}
+
+#counter_work i{
+    font-size: 3rem;
+}
+
+#counter_work p{
+    color:white;
 }
 
 
