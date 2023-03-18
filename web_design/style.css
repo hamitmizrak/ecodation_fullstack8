@@ -74,10 +74,10 @@ i {
     opacity: .9;
 }
 
-/* img {
+ img {
     max-width: 100%;
     height: auto;
-} */
+} 
 
 img:hover {
     cursor: pointer;
@@ -208,6 +208,11 @@ header{
     background-position: 50% 50%;
     z-index:-1;
 }
+
+.carousel-item{
+   height: 60vh;
+}
+
 
 /*--------------------------Main-------------------------------------- */
 #our_work{
