@@ -251,12 +251,23 @@ header{
     background-attachment: fixed;
     height: 20rem;
     padding: 3rem;
+    margin-top:5rem;
 }
 
 #parallax_work p{
-    color:white;
+    text-indent: 3rem;
 }
 
+
+/*########### aboutme_work ########### */
+#aboutme_work {
+    background-color: rgba(255,255,255,0.9);
+    padding:10rem;
+}
+
+#aboutme_work p{
+    text-indent: 3rem;
+}
 
 /*--------------------------Footer-------------------------------------- */
 
