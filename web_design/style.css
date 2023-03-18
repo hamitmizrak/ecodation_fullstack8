@@ -192,6 +192,7 @@ margin-right:3rem;
 #navbar_second {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #logo {
