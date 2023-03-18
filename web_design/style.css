@@ -268,6 +268,48 @@ header{
     text-indent: 3rem;
 }
 
+/*########### blog_work ########### */
+#blog_work{
+    position: relative;
+}
+
+
+#blog_work::before{
+    position:absolute;
+    top:0;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
+    content: "";
+    background-image: url('./images/blog.jpg');
+    background-size: cover;
+    opacity: .9;
+}
+
+#blog_work .card{
+    margin-bottom: 2rem;
+}
+
+#blog_work .card:hover{
+    box-shadow: rgba(120, 135, 151,.8) 0px 20px 30px -10px;
+}
+
+
+#blog_work .card-text{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+#blog_work img{
+    width: 20rem;
+    height: 15rem;
+}
+
+
+
+
 /*--------------------------Footer-------------------------------------- */
 
 footer{
