@@ -205,7 +205,6 @@ margin-right:3rem;
 
 /*--------------------------Header-------------------------------------- */
 header{
-
     z-index:1;
 }
 
@@ -238,6 +237,24 @@ header{
 }
 
 #counter_work p{
+    color:white;
+}
+
+
+/*########### parallax_work ########### */
+#parallax_work{
+    background-image: url("./images/parallax.jpg");
+    background-color: rgba(0,0,0,.2);
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20rem;
+    padding: 3rem;
+
+}
+
+#parallax_work p{
     color:white;
 }
 
