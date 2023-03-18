@@ -282,10 +282,6 @@ color: white;
     padding: 3rem;
 }
 
-#footer_top .container .row .shadow{
-  
-}
-
 
 #footer_bottom {
     background-color: #101111;
@@ -294,3 +290,6 @@ color: white;
 #footer_bottom p{
     color: white;
 }
+
+
+/*--------------------------Responsive Design-------------------------------------- */
