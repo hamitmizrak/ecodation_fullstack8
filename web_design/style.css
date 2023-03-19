@@ -327,6 +327,18 @@ header{
     background-color: rgba(0,0,0,.8);
     padding:1rem;
 }
+
+/*########### backtop ########### */
+#back_top{
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    background-color: #101111;
+    padding: 0.5rem;
+    color:yellow;
+    border-radius: 0.5rem;
+}
+
 /*--------------------------Footer-------------------------------------- */
 footer{
 min-height: 20rem;
