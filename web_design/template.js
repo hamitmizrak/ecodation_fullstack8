@@ -4,11 +4,14 @@ function dark_light() {
     let darkData = document.body.classList.toggle("dark_mode_css")
 }
 
-//now date 
-let now = () => {
-    document.getElementById("now_date").innerHTML = new Date().getFullYear();
-}
-now();
+//Search search_id
+$(function(){
+    const searchData=["Adana","Bursa","Diyarbakir","Elazığ","Giresun","Kastamonu","Malatya","Niğde","Van"];
+   $("#search_id").autocomplete({
+    source:searchData
+   });
+})
+
 
 //BackToTop 
 $(window).scroll(function () {
@@ -22,3 +25,11 @@ $("#back_top").click(function(){
     $('html,body').animate({scrollTop:0},100,'easeInOutExpo');
     return false;
 });
+
+
+
+//now date 
+let now = () => {
+    document.getElementById("now_date").innerHTML = new Date().getFullYear();
+}
+now();
