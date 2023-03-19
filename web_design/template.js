@@ -12,6 +12,10 @@ $(function(){
    });
 })
 
+// Register 
+
+
+// LOGIN ODEV
 
 //BackToTop 
 $(window).scroll(function () {
