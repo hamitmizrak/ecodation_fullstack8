@@ -215,7 +215,7 @@ header{
 }
 
 .carousel-item{
-   height: 50rem;
+   height: 30rem;
 }
 
 
@@ -223,7 +223,6 @@ header{
 /*########### our_work ########### */
 #our_work{
     margin-bottom: 3rem;
-    margin-top:3rem;
 }
 
 #our_work i{
@@ -256,7 +255,6 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 3rem;
-    margin-top:5rem;
 }
 
 #parallax_work .col-md-6 p{
@@ -269,7 +267,7 @@ header{
 /*########### aboutme_work ########### */
 #aboutme_work {
     background-color: rgba(255,255,255,0.9);
-    
+    padding:4rem;
 }
 
 #aboutme_work p{
