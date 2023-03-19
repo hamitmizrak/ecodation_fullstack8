@@ -132,11 +132,30 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Body
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <form class="m-4">
+                        <div class="mb-3">
+                            <label for="nickname" class="form-label">Nickname</label>
+                            <input type="text" class="form-control" id="nickname" aria-describedby="nicknameHelp">
+                            <div id="nicknameHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="passwd" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwd" aria-describedby="passwdHelp">
+                            <div id="passwdHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+                        </div>
+                
+ 
+                        <button type="reset" class="btn btn-danger btn-sm">Temizle</button>
+                        <button type="submit" class="btn btn-primary btn-sm">Gönder</button>
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Kapat</button>
+                    </form>
                 </div>
             </div>
         </div>
