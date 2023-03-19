@@ -34,15 +34,24 @@ $(function () {
             $("#nicknameValidation").html(`<b>Nickname boş geçilemez</b>`)
         }
 
-        //emailValidation
-        if (email == "") {
-            $("#emailValidation").html(`<b>email boş geçilemez</b>`)
-        }
-
         //passwdValidation
         if (passwd == "") {
             $("#passwdValidation").html(`<b>passwd boş geçilemez</b>`)
         }
+
+        //emailValidation
+        if (email == "") {
+            $("#emailValidation").html(`<b>email boş geçilemez</b>`)
+        } else if (validateEmail(email) == false) {
+            $("#emailValidation").html(`<b>email uygun formatta yazmadınız</b>`)
+        }
+
+        //arrow function ile anonymous function arasındaki fark
+        function validateEmail (email)  {
+            const regex =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return regex.test(email);
+        }
+
     });
 })
 
