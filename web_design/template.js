@@ -30,6 +30,14 @@ $("#back_top").click(function(){
 
 //now date 
 let now = () => {
+    //HTML
     document.getElementById("now_date").innerHTML = new Date().getFullYear();
+    
+    // CSS
+    $("#now_date").css("color","red");
+    const cssDate={
+        "box-shadow":"1px 1px 3px 1px rgba(255,255,255,0.1)",
+    }
+    $("#now_date").css(cssDate);
 }
 now();
