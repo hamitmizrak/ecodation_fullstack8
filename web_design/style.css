@@ -119,6 +119,12 @@ img:hover {
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
 }
+.line-clamp16 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 16;
+    -webkit-box-orient: vertical;
+}
 
 /*--------------------------Navbar First-------------------------------------- */
 #navbar_first {
@@ -253,9 +259,14 @@ header{
     margin-top:5rem;
 }
 
-#parallax_work p{
+#parallax_work .col-md-6 p{
     text-indent: 3rem;
+    background-color: rgba(0,0,0,.6); 
+    color:white; padding:0 1rem;
+
 }
+
+parallax_work
 
 
 /*########### aboutme_work ########### */
