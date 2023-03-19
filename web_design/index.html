@@ -135,26 +135,25 @@
                     <form class="m-4" method="post" action="#">
                         <div class="mb-3">
                             <label for="nickname" class="form-label">Nickname</label>
-                            <input type="text" class="form-control" id="nickname" aria-describedby="nicknameHelp">
-                            <div id="nicknameHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+                            <input type="text" class="form-control" id="nickname" required aria-describedby="nicknameValidation">
+                            <div id="nicknameValidation" class="form-text text-danger"></div>
                         </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+                            <input type="text" class="form-control" id="email" required aria-describedby="emailValidation">
+                            <div id="emailValidation" class="form-text text-danger"></div>
                         </div>
                 
                         <div class="mb-3">
                             <label for="passwd" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="passwd" aria-describedby="passwdHelp">
-                            <div id="passwdHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+                            <input type="text" class="form-control" id="passwd" required aria-describedby="passwdValidation">
+                            <div id="passwdValidation" class="form-text text-danger"></div>
                         </div>
-                
  
                         <button type="reset" class="btn btn-danger btn-sm">Temizle</button>
-                        <button type="submit" class="btn btn-primary btn-sm">Gönder</button>
-                        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Kapat</button>
+                        <button type="submit" id="registerSubmit" class="btn btn-primary btn-sm">Gönder</button>
+                        <input type="button" class="btn btn-danger btn-sm" value="Kapat" data-bs-dismiss="modal"/>
                     </form>
                 </div>
             </div>
