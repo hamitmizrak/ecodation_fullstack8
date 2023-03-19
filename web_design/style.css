@@ -266,9 +266,6 @@ header{
 
 }
 
-parallax_work
-
-
 /*########### aboutme_work ########### */
 #aboutme_work {
     background-color: rgba(255,255,255,0.9);
@@ -283,7 +280,6 @@ parallax_work
 #blog_work{
     position: relative;
 }
-
 
 #blog_work::before{
     position:absolute;
@@ -324,11 +320,15 @@ parallax_work
     height: 20rem;
 }
 
-
-
-
+/*########### contact_work ########### */
+#contact_work{
+    padding:6rem;
+}
+#c_form{
+    background-color: rgba(0,0,0,.8);
+    padding:1rem;
+}
 /*--------------------------Footer-------------------------------------- */
-
 footer{
 min-height: 20rem;
 max-width: 100%;

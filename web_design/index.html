@@ -408,8 +408,6 @@
 
         <!-- start blog_work  -->
         <!-- section#blog_work>div.container>div.row>h2{Blog}>div.col-md-3>div.card>img>div.card-body>h4.card-title{Title}+p.card-text{lorem*2} -->
-
-
         <section id="blog_work">
             <h2>Blog</h2>
             <div class="container">
@@ -519,9 +517,57 @@
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>
-        <!-- start blog_work  -->
-
         <!-- end blog_work  -->
+
+        <!-- start contact_work  -->
+        <!-- section#contact_work>div.container>div.row>div.col-md-12>h2{Contact}^^div.col-md-6*2 -->
+        <section id="contact_work">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                    <div class="col-md-6">
+                        <!-- https://www.embed-map.com/ -->
+                        <div id="map">
+                            <div id="google-maps-canvas" style="height:500px; max-width:100%;">
+                                <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                    src="https://www.google.com/maps/embed/v1/place?q=Malatya+Merkez,+Türkiye&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Contact</h2>
+                        <form id="c_form">
+                            <div class="form-group mb-2">
+                                 <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="fullname">
+                            </div>
+
+                            <div class="form-group mb-2">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="email">
+                            </div>
+
+                            <div class="form-group mb-2">
+                                <input type="tel" class="form-control" id="tel"
+                                    aria-describedby="emailHelp" placeholder="tel">
+                            </div>
+
+                            <div class="form-group shadow-textarea mb-2">
+                                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="8"
+                                    placeholder="Please write me !"></textarea>
+                            </div>
+                            <div class="mt-3 mb-2">
+                                <button type="reset" class="btn btn-danger">Temizle</button>
+                                <button type="submit" class="btn btn-primary">Gönder</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact_work  -->
 
     </main>
     <!-- end main -->
