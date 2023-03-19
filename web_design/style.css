@@ -266,12 +266,13 @@ header{
 
 /*########### aboutme_work ########### */
 #aboutme_work {
-    background-color: rgba(255,255,255,0.9);
+    background-color: #0c79ee;
     padding:4rem;
 }
 
 #aboutme_work p{
     text-indent: 3rem;
+    color:white;
 }
 
 /*########### blog_work ########### */
